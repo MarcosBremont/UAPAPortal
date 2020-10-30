@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UAPAPortal.Modalidadesdeestudio">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout Grid.Row="0" Grid.Column="0">
+
+                <Grid VerticalOptions="FillAndExpand" HeightRequest="50" BackgroundColor="#FE9930">
+
+                    <StackLayout Orientation="Horizontal"  HeightRequest="40" Margin="0,0,0,0" HorizontalOptions="FillAndExpand" >
+                        <ImageButton Source="leftarrow.png" x:Name="BtnAtras" Clicked="BtnAtras_Clicked" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" HeightRequest="25" Margin="20,0,0,0" ></ImageButton>
+                        <Label TextColor="WhiteSmoke"
+                               Text="Modalidades de estudio" 
+                               FontSize="22"
+                               VerticalOptions="CenterAndExpand"
+                               FontAttributes="Bold"
+                               Margin="0,0,0,0"
+                               />
+                    </StackLayout>
+                </Grid>
+
+            </StackLayout>
+
+            <!--<Image Source="logo_uapa.png" Grid.Row="1"  VerticalOptions="Center" HeightRequest="80" />-->
+
+
+      
+
+
+                    <ScrollView>
+                         <StackLayout Padding="10">
+                        
+                                     <Label VerticalTextAlignment="Start" Text="Desde el año 1995 la UAPA imparte docencia a distancia en la modalidad semipresencial y, desde el año 2001, se ofrece docencia en el programa a distancia virtual."></Label>
+                                        <Label Text="MODALIDAD SEMIPRESENCIAL" FontAttributes="Bold"></Label>
+                                        <Label VerticalTextAlignment="Start" Text="Esta modalidad se ofrece a personas mayores de 18 años, pudiendo acceder a una educación de calidad sin la necesidad de presentarse físicamente todos los días a la Universidad. Convirtiéndose en una excelente opción para quienes trabajan, viven en comunidades alejadas a la Universidad o tienen compromisos familiares, laborales y comunitarios que les imposibilitan la presencia asidua en el centro de estudios."></Label>
+                                        <Label VerticalTextAlignment="Start" Text="Esta modalidad promueve el aprendizaje por iniciativa propia, ya que el participante es responsable de su propio aprendizaje, debe organizar el tiempo que dedicará a su formación."></Label>
+                                        <Label VerticalTextAlignment="Start" Text="El participante de esta modalidad tiene encuentro presenciales una vez a la semana con un facilitador (profesor) que orienta y evalúa las experiencias de aprendizaje que se desarrollan en cada asignatura, produciéndose una retroalimentación continua, tanto en los encuentros presenciales como a través de la plataforma de la Universidad."></Label>
+                                        <Label VerticalTextAlignment="Start" Text="MODALIDAD A DISTANCIA VIRTUAL" FontAttributes="Bold"></Label>
+                                        <Label VerticalTextAlignment="Start" Text="Este programa está diseñado para responder a la necesidad de aprendizaje de poblaciones diseminadas por toda la geografía nacional e internacional, permitiendo a las personas acceder a las diferentes carreras desde sus lugares de residencia, donde el contacto estudiante-universidad es a través de medios didácticos y electrónicos."></Label>
+                                        <Label VerticalTextAlignment="Start" FontAttributes="Bold" Text="Metodología"></Label>
+                                         <Label VerticalTextAlignment="Start" Text="El enfoque metodológico se fundamenta en los principios de la educación a distancia (separación facilitador/participante) y enseñanza apoyada en diferentes medios técnicos, entre ellos:"></Label>
+                                        <Label VerticalTextAlignment="Start" Text=" ~ Plataforma virtual con las actividades a realizar durante el bimestre y recursos que"></Label>
+                                        <Label VerticalTextAlignment="Start" Text="apoyan el contenido del programa de la asignatura."></Label>
+                                        <Label VerticalTextAlignment="Start" Text="~ Material didáctico de naturaleza electrónica."></Label>
+                                        <Label VerticalTextAlignment="Start" Text="~ Material impreso adecuado para el auto estudio por asignatura."></Label>
+                                        <Label VerticalTextAlignment="Start" Text="El participante recibe el material didáctico del curso o asignatura a través de la plataforma virtual, material impreso para el autoestudio (manuales, folletos, libros, guías didácticas, ejercicios), y un seguimiento constante por parte del facilitador en cada asignatura y de la Unidad de Tutorías, 24 horas (ésta le responderá sus inquietudes en el transcurso de las primeras 24 horas de haber enviado la inquietud), también a través del teléfono, con una línea 1-200, libre de cargos, o a través del correo electrónico. Para apoyar estos medios de comunicación se ha incluido el whatsapp, ajustándose estrictamente a la calendarización para el cumplimiento de tareas y actividades."></Label>
+                                        <Label VerticalTextAlignment="Start" Text="Evaluación" FontAttributes="Bold"></Label>
+                                        <Label VerticalTextAlignment="Start" Text="La evaluación está constituida por:"></Label>
+                                        <Label VerticalTextAlignment="Start" FontAttributes="Italic" Text="Actividades de evaluación: Se trata de actividades abiertas que tienen como misión producir el debate formativo, la reflexión, el descubrimiento o constatación de determinadas realidades y saberes."></Label>
+                                        <Label VerticalTextAlignment="Start" FontAttributes="Italic" Text="Prueba de evaluación presencial: Es una prueba realizada por el participante al finalizar cada asignatura, sobre el contenido estudiado y en presencia de un jurado compuesto por facilitadores, que asigna la Universidad. Para tomar dicha prueba deben dirigirse al recinto en donde fueron matriculados y presentar su carné de la Universidad o una identificación personal con fotografía." FontAttributes="Bold"></Label>
+                                        <Label VerticalTextAlignment="Start" Text="Evaluación" FontAttributes="Bold"></Label>
+                         </StackLayout>
+                    </ScrollView>
+    
+            
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -19,5 +19,10 @@ namespace UAPAPortal
         {
             await Navigation.PushModalAsync(new MIUAPA());
         }
+
+        private async void BtnAdminisiones_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new Admisiones());
+        }
     }
 }

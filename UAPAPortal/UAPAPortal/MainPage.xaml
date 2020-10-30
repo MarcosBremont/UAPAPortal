@@ -61,6 +61,7 @@
                                             Grid.Column="1"
                                             Text="Admisiones"
                                             x:Name="BtnAdminisiones"
+                                            Clicked="BtnAdminisiones_Clicked"
                                             ImageSource="study"
                                             HeightRequest="80"
                                             BackgroundColor="#FE9930"
