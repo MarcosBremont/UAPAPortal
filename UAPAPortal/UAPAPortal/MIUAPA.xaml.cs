@@ -31,5 +31,29 @@ namespace UAPAPortal
         {
             await Navigation.PushModalAsync(new BibliotecaVirtual());
         }
+
+        private async void BtnCalendarioAcademico_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new CalendarioAcademico());
+
+        }
+
+        private async void BtnDirectorioTelefononico_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new DirectorioTelefonico());
+        }
+
+        private async void BtnCorreoElectronico_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new CorreoElectronico());
+        }
+
+        private async void BtnAtras_Clicked(object sender, EventArgs e)
+        {
+            Opacity = 0.5;
+            await Navigation.PopModalAsync();
+            Opacity = 1;
+
+        }
     }
 }

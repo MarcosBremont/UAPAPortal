@@ -10,12 +10,12 @@ using Xamarin.Forms.Xaml;
 namespace UAPAPortal
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CalendarioAcademico : ContentPage
+    public partial class CorreoElectronico : ContentPage
     {
-        public CalendarioAcademico()
+        public CorreoElectronico()
         {
             InitializeComponent();
-            Browser.Source = "https://www.uapa.edu.do/nosotros/calendario/";
+            Browser.Source = "https://www.uapa.edu.do/servicios/email/";
         }
 
         protected async override void OnAppearing()
@@ -57,6 +57,7 @@ namespace UAPAPortal
         {
             Opacity = 0.5;
             await Navigation.PushModalAsync(new MIUAPA());
+            Browser.IsEnabled = false;
             Opacity = 1;
         }
     }

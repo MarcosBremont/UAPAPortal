@@ -10,12 +10,12 @@ using Xamarin.Forms.Xaml;
 namespace UAPAPortal
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CalendarioAcademico : ContentPage
+    public partial class DirectorioTelefonico : ContentPage
     {
-        public CalendarioAcademico()
+        public DirectorioTelefonico()
         {
             InitializeComponent();
-            Browser.Source = "https://www.uapa.edu.do/nosotros/calendario/";
+            Browser.Source = "https://www.uapa.edu.do/nosotros/directorio/";
         }
 
         protected async override void OnAppearing()
