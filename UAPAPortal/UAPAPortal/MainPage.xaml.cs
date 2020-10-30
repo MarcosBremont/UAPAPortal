@@ -14,5 +14,10 @@ namespace UAPAPortal
         {
             InitializeComponent();
         }
+
+        private async void BtnMiUapa_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new MIUAPA());
+        }
     }
 }

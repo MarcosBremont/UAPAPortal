@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UAPAPortal.CampusVirtual">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <ProgressBar Progress="0.2"  
+                 HorizontalOptions="FillAndExpand"  
+                 x:Name="progress"  
+                 IsVisible="True"/>
+            
+            <WebView x:Name="Browser"  
+             HeightRequest="1000"  
+             WidthRequest="1000"  
+             Navigating="OnNavigating"  
+             Navigated="OnNavigated"  
+             VerticalOptions="FillAndExpand" />
+
+            <StackLayout Orientation="Horizontal">
+            <Button Text="&lt;" HorizontalOptions="Start" x:Name="Back" Clicked="Back_Clicked"></Button>
+                <ImageButton Source="home" HorizontalOptions="CenterAndExpand" BackgroundColor="Transparent" x:Name="BtnHome" Clicked="BtnHome_Clicked" ></ImageButton>
+            <Button Text=">" x:Name="Front" HorizontalOptions="End" Clicked="Front_Clicked"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

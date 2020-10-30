@@ -1,100 +1,106 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="UAPAPortal.MainPage">
-
+             x:Class="UAPAPortal.MIUAPA">
     <ContentPage.Content>
         <StackLayout BackgroundColor="White">
-        <StackLayout Grid.Row="0" Grid.Column="0">
+            <StackLayout Grid.Row="0" Grid.Column="0">
 
-            <Grid VerticalOptions="FillAndExpand">
-                    <BoxView VerticalOptions="FillAndExpand" BackgroundColor="#09183A"/>
-                <StackLayout Orientation="Horizontal"  HeightRequest="40" Margin="0,10,0,0" HorizontalOptions="FillAndExpand" >
-                    <Label TextColor="WhiteSmoke"
-                               Text="Dashboard" 
+                <Grid VerticalOptions="FillAndExpand">
+                    <BoxView VerticalOptions="FillAndExpand" BackgroundColor="#FE9930"/>
+                    <StackLayout Orientation="Horizontal"  HeightRequest="40" Margin="0,10,0,0" HorizontalOptions="FillAndExpand" >
+                        <Label TextColor="WhiteSmoke"
+                               Text="MI UAPA" 
                                FontSize="22"
                                FontAttributes="Bold"
                                Margin="10,0,0,0"
                                />
-                </StackLayout>
-            </Grid>
+                    </StackLayout>
+                </Grid>
 
-        </StackLayout>
+            </StackLayout>
 
             <Image Source="logo_uapa.png" Grid.Row="1"  VerticalOptions="Center" HeightRequest="80" />
 
 
             <Grid RowSpacing="0" BackgroundColor="White">
 
-            <Grid.RowDefinitions>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="100"/>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
 
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-            </Grid.ColumnDefinitions>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
 
 
                 <Button 
                                           
                                             Grid.Row="0"
-                                               Clicked="BtnMiUapa_Clicked"
+               
                                             Grid.Column="0"
-                                            x:Name="BtnMiUapa"
-                                            Text="Mi UAPA"
+                                            x:Name="BtnCampusVirtual"
+                                            Text="Campus Virtual"
                                             ImageSource="university"
+                    TextColor="White"
+                    Clicked="BtnCampusVirtual_Clicked"
                                             HeightRequest="80"
-                                            BackgroundColor="#FE9930"
+                                            BackgroundColor="#09183A"
                                             Margin="5,20,5,5"
                                             Visual="Material"
                                             CornerRadius="8"
                                            
                                            >
-            </Button>
+                </Button>
                 <Button 
                         Margin="5,20,5,5"
                        
                                             Grid.Row="0"
                                             Grid.Column="1"
-                                            Text="Admisiones"
-                                            x:Name="BtnAdminisiones"
+                                            Text="Servicios En Linea"
+                                            x:Name="BtnServiciosEnLinea"
+                    TextColor="White"
+                    Clicked="BtnServiciosEnLinea_Clicked"
                                             ImageSource="study"
                                             HeightRequest="80"
-                                            BackgroundColor="#FE9930"
+                                            BackgroundColor="#09183A"
                                             CornerRadius="8"
                                            
                                            >
-            </Button>
+                </Button>
 
                 <Button 
                     Margin="5,5,5,5"
                    
                                     Grid.Row="1"
                                     Grid.Column="0"
-                                    Text="Oferta Academica"
-                                    x:Name="BtnOfertaAcademica"
+                                    Text="Biblioteca Virtual"
+                    TextColor="White"
+                    Clicked="BtnBibliotecaVirtual_Clicked"
+                                    x:Name="BtnBibliotecaVirtual"
                                     ImageSource="ofertaacademica"
                                     HeightRequest="80"
-                                    BackgroundColor="#FE9930"
+                                    BackgroundColor="#09183A"
                                     CornerRadius="8"
                                    >
-            </Button>
+                </Button>
 
                 <Button 
                     Margin="5,5,5,5"
                  
                                     Grid.Row="1"
                                     Grid.Column="1"
-                                    Text="Departamentos"
-                                    x:Name="BtnDepartamentos"
+                                    Text="Calendario Academico"
+                                    x:Name="BtnCalendarioAcademico"
                                     FontSize="10"
+                    TextColor="White"
                                     FontAttributes="Bold"
                                     ImageSource="departamentos"
                                     HeightRequest="80"
-                                    BackgroundColor="#FE9930"
+                                    BackgroundColor="#09183A"
                                     CornerRadius="8" >
                 </Button>
 
@@ -103,11 +109,12 @@
                    
                                     Grid.Row="2"
                                     Grid.Column="0"
-                                    x:Name="BtnNosotros"
-                                    Text="Nosotros"
+                    TextColor="White"
+                                    x:Name="BtnDirectorioTelefononico"
+                                    Text="Directorio Telefonico"
                                     ImageSource="Nosotros"
                                     HeightRequest="80"
-                                    BackgroundColor="#FE9930"
+                                    BackgroundColor="#09183A"
                                     CornerRadius="8"
                                    >
                 </Button>
@@ -117,18 +124,21 @@
                  
                                     Grid.Row="2"
                                     Grid.Column="1"
-                                    x:Name="BtnAjustes"
-                                    Text="Ajustes"
+                    TextColor="White"
+                                    x:Name="BtnCorreoElectronico"
+                                    Text="Correo Electronico"
                                     ImageSource="ajustes"
+                    FontSize="12"
+                    FontAttributes="Bold"
                                     HeightRequest="80"
-                                    BackgroundColor="#FE9930"
+                                    BackgroundColor="#09183A"
                                     CornerRadius="8" >
                 </Button>
             </Grid>
 
             <Label Text="Created By MarcosBremont" HorizontalOptions="CenterAndExpand" Margin="0,15,0,0"></Label>
-      
 
-    </StackLayout>
+
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
