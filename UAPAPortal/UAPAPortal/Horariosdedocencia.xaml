@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UAPAPortal.Horariosdedocencia">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout Grid.Row="0" Grid.Column="0">
+
+
+                <Grid VerticalOptions="FillAndExpand" BackgroundColor="#FE9930">
+
+                    <StackLayout Orientation="Horizontal"  HeightRequest="70" Margin="0,0,0,0" HorizontalOptions="FillAndExpand"  >
+                        <ImageButton Source="leftarrow.png" x:Name="BtnAtras" Clicked="BtnAtras_Clicked" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" HeightRequest="25" Margin="20,0,0,0" ></ImageButton>
+                        <Label TextColor="WhiteSmoke"
+                               Text="Horarios de docencia" 
+                               FontSize="22"
+                               VerticalOptions="CenterAndExpand"
+                               FontAttributes="Bold"
+                               Margin="0,0,0,0"
+                               />
+                    </StackLayout>
+                </Grid>
+
+                <ScrollView>
+                <StackLayout Padding="10">
+                        <Label Text="HORARIOS DE DOCENCIA PARA GRADO" FontAttributes="Bold"></Label>
+                        <Label Text="Modalidad semipresencial" FontAttributes="Bold"></Label>
+                        <Label Text="Sede Santiago" FontAttributes="Bold"></Label>
+
+                        <StackLayout Orientation="Horizontal" Padding="0,9,0,0">
+                            <Label >
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Jueves:  " FontSize="14" TextColor="#333" BackgroundColor="Transparent" FontAttributes="Bold"/>
+                                        <Span Text="1:00 p.m. a 6:00 p.m. 5:00 p.m. a 10:00 p.m." FontSize="14" TextColor="#333" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Padding="0,9,0,0">
+                            <Label >
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Sabado:  " FontSize="14" TextColor="#333" BackgroundColor="Transparent" FontAttributes="Bold"/>
+                                        <Span Text="8:00 a.m. a 1:00 p.m 1:15 p.m. a 6:15 p.m." FontSize="14" TextColor="#333" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </StackLayout>
+
+                        <Label Text="VIRTUAL" Padding="0,9,0,0" FontAttributes="Bold"></Label>
+                        <Label Text="Recinto Santo Domingo Oriental" Padding="0,9,0,0" FontAttributes="Bold"></Label>
+
+
+                        <StackLayout Orientation="Horizontal" Padding="0,9,0,0">
+                            <Label >
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Miércoles:  " FontSize="14" TextColor="#333" BackgroundColor="Transparent" FontAttributes="Bold"/>
+                                        <Span Text="1:00 pm a 6:00 pm / 5:00pm a 10:00pm" FontSize="14" TextColor="#333" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Padding="0,9,0,0">
+                            <Label >
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Jueves :  " FontSize="14" TextColor="#333" BackgroundColor="Transparent" FontAttributes="Bold"/>
+                                        <Span Text="1:00 pm a 6:00 pm / 5:00pm a 10:00pm" FontSize="14" TextColor="#333" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Padding="0,9,0,0">
+                            <Label >
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Sábados :  " FontSize="14" TextColor="#333" BackgroundColor="Transparent" FontAttributes="Bold"/>
+                                        <Span Text="8:00 am a 1:00 pm / 1:15 pm a 6:15 pm" FontSize="14" TextColor="#333" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Padding="0,9,0,0">
+                            <Label >
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Domingos :  " FontSize="14" TextColor="#333" BackgroundColor="Transparent" FontAttributes="Bold"/>
+                                        <Span Text="8:00 am a 1:00 pm" FontSize="14" TextColor="#333" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </StackLayout>
+
+                        <Label Text="VIRTUAL" Padding="0,9,0,0" FontAttributes="Bold"></Label>
+                        <Label Text="NAGUA" Padding="0,9,0,0" FontAttributes="Bold"></Label>
+
+                        <StackLayout Orientation="Horizontal" Padding="0,9,0,0">
+                            <Label >
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Sábados  :  " FontSize="14" TextColor="#333" BackgroundColor="Transparent" FontAttributes="Bold"/>
+                                        <Span Text="8:00 AM / 6:00 PM" FontSize="14" TextColor="#333" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Padding="0,9,0,0">
+                            <Label >
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Domingos :  " FontSize="14" TextColor="#333" BackgroundColor="Transparent" FontAttributes="Bold"/>
+                                        <Span Text="8:00 am a 1:00 pm" FontSize="14" TextColor="#333" />
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+                        </StackLayout>
+
+                        <Label Text="VIRTUAL" Padding="0,9,0,0" FontAttributes="Bold"></Label>
+                        <Label TextColor="Black" Text="NOTA: en esta modalidad, semipresencial, solo asisten a clases un día por semana, en el horario correspondiente. Quienes estudian bajo la modalidad virtual asisten al final de cada trimestre a tomar las pruebas escritas." Padding="0,9,0,0" FontAttributes="Bold"></Label>
+
+
+
+                    </StackLayout>
+                </ScrollView>
+                    
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

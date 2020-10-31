@@ -51,7 +51,7 @@ namespace UAPAPortal
         private async void BtnAtras_Clicked(object sender, EventArgs e)
         {
             Opacity = 0.5;
-            await Navigation.PopModalAsync();
+            await Navigation.PushModalAsync(new MainPage());
             Opacity = 1;
 
         }

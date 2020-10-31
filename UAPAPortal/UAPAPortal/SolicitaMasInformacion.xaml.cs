@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace UAPAPortal
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Modalidadesdeestudio : ContentPage
+    public partial class SolicitaMasInformacion : ContentPage
     {
-        public Modalidadesdeestudio()
+        public SolicitaMasInformacion()
         {
             InitializeComponent();
-            Browser.Source = "https://www.uapa.edu.do/estudia/modalidades/";
-        }
+            Browser.Source = "https://www.uapa.edu.do/estudia/solicita-informacion/";
 
+        }
         protected async override void OnAppearing()
         {
             base.OnAppearing();
@@ -58,6 +58,6 @@ namespace UAPAPortal
             Opacity = 0.5;
             await Navigation.PushModalAsync(new Admisiones());
             Opacity = 1;
-        } 
+        }
     }
 }
