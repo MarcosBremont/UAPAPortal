@@ -19,9 +19,12 @@ namespace UAPAPortal
 
         }
 
-        private void BtnAtras_Clicked(object sender, EventArgs e)
+        private async void BtnAtras_Clicked(object sender, EventArgs e)
         {
+            Opacity = 0.5;
 
+            await Navigation.PopModalAsync();
+            Opacity = 1;
         }
     }
 }

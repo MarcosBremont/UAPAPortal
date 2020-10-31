@@ -41,7 +41,7 @@
                 <Button 
                                           
                                             Grid.Row="0"
-                                               Clicked="BtnMiUapa_Clicked"
+                                             Clicked="BtnMiUapa_Clicked"
                                             Grid.Column="0"
                                             x:Name="BtnMiUapa"
                                             Text="Mi UAPA"
