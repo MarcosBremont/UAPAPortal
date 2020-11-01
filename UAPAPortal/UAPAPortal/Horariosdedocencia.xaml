@@ -14,6 +14,7 @@
                         <Label TextColor="WhiteSmoke"
                                Text="Horarios de docencia" 
                                FontSize="22"
+                               
                                VerticalOptions="CenterAndExpand"
                                FontAttributes="Bold"
                                Margin="0,0,0,0"
@@ -23,9 +24,9 @@
 
                 <ScrollView>
                 <StackLayout Padding="10">
-                        <Label Text="HORARIOS DE DOCENCIA PARA GRADO" FontAttributes="Bold"></Label>
-                        <Label Text="Modalidad semipresencial" FontAttributes="Bold"></Label>
-                        <Label Text="Sede Santiago" FontAttributes="Bold"></Label>
+                        <Label Text="HORARIOS DE DOCENCIA PARA GRADO" HorizontalOptions="CenterAndExpand" Padding="5" TextColor="#333" FontAttributes="Bold"></Label>
+                        <Label Text="Modalidad semipresencial" HorizontalOptions="CenterAndExpand" Padding="0,0,0,20" TextColor="#333" FontAttributes="Bold"></Label>
+                        <Label Text="- Sede Santiago" TextColor="#333" FontAttributes="Bold"></Label>
 
                         <StackLayout Orientation="Horizontal" Padding="0,9,0,0">
                             <Label >
@@ -49,8 +50,8 @@
                             </Label>
                         </StackLayout>
 
-                        <Label Text="VIRTUAL" Padding="0,9,0,0" FontAttributes="Bold"></Label>
-                        <Label Text="Recinto Santo Domingo Oriental" Padding="0,9,0,0" FontAttributes="Bold"></Label>
+                        <Label Text="VIRTUAL" TextColor="#333" Padding="0,9,0,0" FontAttributes="Bold"></Label>
+                        <Label Text="- Recinto Santo Domingo Oriental" TextColor="#333" Padding="0,9,0,0" FontAttributes="Bold"></Label>
 
 
                         <StackLayout Orientation="Horizontal" Padding="0,9,0,0">
@@ -97,8 +98,8 @@
                             </Label>
                         </StackLayout>
 
-                        <Label Text="VIRTUAL" Padding="0,9,0,0" FontAttributes="Bold"></Label>
-                        <Label Text="NAGUA" Padding="0,9,0,0" FontAttributes="Bold"></Label>
+                        <Label Text="VIRTUAL" TextColor="#333" Padding="0,9,0,0" FontAttributes="Bold"></Label>
+                        <Label Text="- Recinto NAGUA" TextColor="#333" Padding="0,9,0,0" FontAttributes="Bold"></Label>
 
                         <StackLayout Orientation="Horizontal" Padding="0,9,0,0">
                             <Label >
@@ -121,8 +122,8 @@
                             </Label>
                         </StackLayout>
 
-                        <Label Text="VIRTUAL" Padding="0,9,0,0" FontAttributes="Bold"></Label>
-                        <Label TextColor="Black" Text="NOTA: en esta modalidad, semipresencial, solo asisten a clases un día por semana, en el horario correspondiente. Quienes estudian bajo la modalidad virtual asisten al final de cada trimestre a tomar las pruebas escritas." Padding="0,9,0,0" FontAttributes="Bold"></Label>
+                        <Label Text="VIRTUAL" TextColor="#333" Padding="0,9,0,0" FontAttributes="Bold"></Label>
+                        <Label TextColor="#333" Text="NOTA: en esta modalidad, semipresencial, solo asisten a clases un día por semana, en el horario correspondiente. Quienes estudian bajo la modalidad virtual asisten al final de cada trimestre a tomar las pruebas escritas." Padding="0,9,0,0" FontAttributes="Bold"></Label>
 
 
 

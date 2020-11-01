@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="UAPAPortal.Admisiones">
+             x:Class="UAPAPortal.OfertaAcademica">
     <ContentPage.Content>
         <StackLayout BackgroundColor="White">
             <StackLayout Grid.Row="0" Grid.Column="0">
 
                 <Grid VerticalOptions="FillAndExpand" BackgroundColor="#FE9930">
 
-                    <StackLayout Orientation="Horizontal"  HeightRequest="70" Margin="0,0,0,0" HorizontalOptions="FillAndExpand" >
-                        <ImageButton Source="leftarrow.png" x:Name="BtnAtras" Clicked="BtnAtras_Clicked" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" HeightRequest="25" Margin="20,0,0,0" ></ImageButton>
+                    <StackLayout Orientation="Horizontal"  HeightRequest="40" Margin="0,0,0,0" HorizontalOptions="FillAndExpand" >
+                        <ImageButton Source="leftarrow.png" x:Name="BtnAtras" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" HeightRequest="25" Margin="20,0,0,0" ></ImageButton>
                         <Label TextColor="WhiteSmoke"
-                               Text="Admisiones" 
+                               Text="MI UAPA" 
                                FontSize="22"
                                VerticalOptions="CenterAndExpand"
                                FontAttributes="Bold"
@@ -44,13 +44,11 @@
                                             Grid.Row="0"
                
                                             Grid.Column="0"
-                                            x:Name="BtnModalidades"
-                                            Text="Modalidades de Estudio"
-                                            FontSize="12"
-                                            Clicked="BtnModalidades_Clicked"
+                                            x:Name="BtnCampusVirtual"
+                                            Text="Campus Virtual"
                                             ImageSource="university"
-                                            TextColor="White"
-                                         
+                    TextColor="White"
+                    Clicked="BtnCampusVirtual_Clicked"
                                             HeightRequest="80"
                                             BackgroundColor="#09183A"
                                             Margin="5,20,5,5"
@@ -60,15 +58,13 @@
                                            >
                 </Button>
                 <Button 
-                                            Margin="5,20,5,5"
+                        Margin="5,20,5,5"
                        
                                             Grid.Row="0"
                                             Grid.Column="1"
-                                            Text="Requisitos de admisión"
-                                            x:Name="BtnRequisitos"
-                                            TextColor="White"
-                                            Clicked="BtnRequisitos_Clicked"
-                                          FontSize="12"
+                                            Text="Servicios En Linea"
+                                            x:Name="BtnServiciosEnLinea"
+                    TextColor="White"
                                             ImageSource="study"
                                             HeightRequest="80"
                                             BackgroundColor="#09183A"
@@ -78,15 +74,13 @@
                 </Button>
 
                 <Button 
-                                    Margin="5,5,5,5"
+                    Margin="5,5,5,5"
                    
                                     Grid.Row="1"
                                     Grid.Column="0"
-                                    Text="Horarios de docencia"
-                                    TextColor="White"
-                                   FontSize="12"
-                                     Clicked="BtnHorariosDeDocencia_Clicked"
-                                    x:Name="BtnHorariosDeDocencia"
+                                    Text="Biblioteca Virtual"
+                    TextColor="White"
+                                    x:Name="BtnBibliotecaVirtual"
                                     ImageSource="ofertaacademica"
                                     HeightRequest="80"
                                     BackgroundColor="#09183A"
@@ -95,15 +89,14 @@
                 </Button>
 
                 <Button 
-                                    Margin="5,5,5,5"
-                  FontSize="12"
+                    Margin="5,5,5,5"
+                 
                                     Grid.Row="1"
                                     Grid.Column="1"
-                                    Text="Costos e información financiera"
-                                    x:Name="BtnCostosEInformacion"
-                               
-                                    TextColor="White"
-                                    Clicked="BtnCostosEInformacion_Clicked"
+                                    Text="Calendario Academico"
+                                    x:Name="BtnCalendarioAcademico"
+                                    FontSize="10"
+                    TextColor="White"
                                     FontAttributes="Bold"
                                     ImageSource="departamentos"
                                     HeightRequest="80"
@@ -112,14 +105,13 @@
                 </Button>
 
                 <Button 
-                                    Margin="5,5,5,5"
-                    FontSize="12"
+                    Margin="5,5,5,5"
+                   
                                     Grid.Row="2"
                                     Grid.Column="0"
-                                    TextColor="White"
-                                    x:Name="BtnSolicitaMasInf"
-                                    Text="Solicita más Información"
-                                   Clicked="BtnSolicitaMasInf_Clicked"
+                    TextColor="White"
+                                    x:Name="BtnDirectorioTelefononico"
+                                    Text="Directorio Telefonico"
                                     ImageSource="Nosotros"
                                     HeightRequest="80"
                                     BackgroundColor="#09183A"
@@ -127,10 +119,24 @@
                                    >
                 </Button>
 
-                
+                <Button 
+                    Margin="5,5,5,5"
+                 
+                                    Grid.Row="2"
+                                    Grid.Column="1"
+                    TextColor="White"
+                                    x:Name="BtnCorreoElectronico"
+                                    Text="Correo Electronico"
+                                    ImageSource="ajustes"
+                    FontSize="12"
+                    FontAttributes="Bold"
+                                    HeightRequest="80"
+                                    BackgroundColor="#09183A"
+                                    CornerRadius="8" >
+                </Button>
             </Grid>
 
-           
+            <Label Text="Created By MarcosBremont" HorizontalOptions="CenterAndExpand" Margin="0,15,0,0"></Label>
 
 
         </StackLayout>
