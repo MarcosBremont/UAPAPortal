@@ -24,5 +24,10 @@ namespace UAPAPortal
         {
             await Navigation.PushModalAsync(new Admisiones());
         }
+
+        private async void BtnOfertaAcademica_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new OfertaAcademica());
+        }
     }
 }

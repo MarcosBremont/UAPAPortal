@@ -11,7 +11,7 @@
                     <StackLayout Orientation="Horizontal"  HeightRequest="40" Margin="0,0,0,0" HorizontalOptions="FillAndExpand" >
                         <ImageButton Source="leftarrow.png" x:Name="BtnAtras" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" HeightRequest="25" Margin="20,0,0,0" ></ImageButton>
                         <Label TextColor="WhiteSmoke"
-                               Text="MI UAPA" 
+                               Text="OFERTA ACADEMICA" 
                                FontSize="22"
                                VerticalOptions="CenterAndExpand"
                                FontAttributes="Bold"
@@ -33,6 +33,7 @@
                     <RowDefinition Height="100"/>
 
                 </Grid.RowDefinitions>
+                
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
@@ -42,98 +43,61 @@
                 <Button 
                                           
                                             Grid.Row="0"
-               
                                             Grid.Column="0"
-                                            x:Name="BtnCampusVirtual"
-                                            Text="Campus Virtual"
+                                            x:Name="BtnPregado"
+                                            Text="Pregado"
+                                            Clicked="BtnPregado_Clicked"
                                             ImageSource="university"
-                    TextColor="White"
-                    Clicked="BtnCampusVirtual_Clicked"
+                                            TextColor="White"
                                             HeightRequest="80"
                                             BackgroundColor="#09183A"
                                             Margin="5,20,5,5"
                                             Visual="Material"
-                                            CornerRadius="8"
-                                           
-                                           >
+                                            CornerRadius="8">
                 </Button>
                 <Button 
-                        Margin="5,20,5,5"
-                       
+                                            Margin="5,20,5,5"
                                             Grid.Row="0"
                                             Grid.Column="1"
-                                            Text="Servicios En Linea"
-                                            x:Name="BtnServiciosEnLinea"
-                    TextColor="White"
+                                            Text="Grado"
+                                            x:Name="BtnGrado"
+                                            TextColor="White"
                                             ImageSource="study"
                                             HeightRequest="80"
                                             BackgroundColor="#09183A"
-                                            CornerRadius="8"
-                                           
-                                           >
+                                            CornerRadius="8">
                 </Button>
 
                 <Button 
-                    Margin="5,5,5,5"
-                   
-                                    Grid.Row="1"
-                                    Grid.Column="0"
-                                    Text="Biblioteca Virtual"
-                    TextColor="White"
-                                    x:Name="BtnBibliotecaVirtual"
-                                    ImageSource="ofertaacademica"
-                                    HeightRequest="80"
-                                    BackgroundColor="#09183A"
-                                    CornerRadius="8"
-                                   >
+                                            Margin="5,5,5,5"
+                                            Grid.Row="1"
+                                            Grid.Column="0"
+                                            Text="Postgrado"
+                                            TextColor="White"
+                                            x:Name="BtnPostgrado"
+                                            ImageSource="ofertaacademica"
+                                            HeightRequest="80"
+                                            BackgroundColor="#09183A"
+                                            CornerRadius="8">
                 </Button>
 
                 <Button 
-                    Margin="5,5,5,5"
+                                            Margin="5,5,5,5"
                  
-                                    Grid.Row="1"
-                                    Grid.Column="1"
-                                    Text="Calendario Academico"
-                                    x:Name="BtnCalendarioAcademico"
-                                    FontSize="10"
-                    TextColor="White"
-                                    FontAttributes="Bold"
-                                    ImageSource="departamentos"
-                                    HeightRequest="80"
-                                    BackgroundColor="#09183A"
-                                    CornerRadius="8" >
+                                            Grid.Row="1"
+                                            Grid.Column="1"
+                                            Text="Educacion continuada"
+                                            x:Name="BtnEducacion"
+                                            FontSize="10"
+                                            TextColor="White"
+                                            FontAttributes="Bold"
+                                            ImageSource="departamentos"
+                                            HeightRequest="80"
+                                            BackgroundColor="#09183A"
+                                            CornerRadius="8" >
                 </Button>
 
-                <Button 
-                    Margin="5,5,5,5"
-                   
-                                    Grid.Row="2"
-                                    Grid.Column="0"
-                    TextColor="White"
-                                    x:Name="BtnDirectorioTelefononico"
-                                    Text="Directorio Telefonico"
-                                    ImageSource="Nosotros"
-                                    HeightRequest="80"
-                                    BackgroundColor="#09183A"
-                                    CornerRadius="8"
-                                   >
-                </Button>
-
-                <Button 
-                    Margin="5,5,5,5"
-                 
-                                    Grid.Row="2"
-                                    Grid.Column="1"
-                    TextColor="White"
-                                    x:Name="BtnCorreoElectronico"
-                                    Text="Correo Electronico"
-                                    ImageSource="ajustes"
-                    FontSize="12"
-                    FontAttributes="Bold"
-                                    HeightRequest="80"
-                                    BackgroundColor="#09183A"
-                                    CornerRadius="8" >
-                </Button>
+                
             </Grid>
 
             <Label Text="Created By MarcosBremont" HorizontalOptions="CenterAndExpand" Margin="0,15,0,0"></Label>

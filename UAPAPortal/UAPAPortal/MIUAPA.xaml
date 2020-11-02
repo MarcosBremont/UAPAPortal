@@ -8,7 +8,7 @@
 
                 <Grid VerticalOptions="FillAndExpand" BackgroundColor="#FE9930">
                     
-                    <StackLayout Orientation="Horizontal"  HeightRequest="40" Margin="0,0,0,0" HorizontalOptions="FillAndExpand" >
+                    <StackLayout Orientation="Horizontal"  HeightRequest="70" Margin="0,0,0,0" HorizontalOptions="FillAndExpand" >
                     <ImageButton Source="leftarrow.png" x:Name="BtnAtras" Clicked="BtnAtras_Clicked" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" HeightRequest="25" Margin="20,0,0,0" ></ImageButton>
                         <Label TextColor="WhiteSmoke"
                                Text="MI UAPA" 

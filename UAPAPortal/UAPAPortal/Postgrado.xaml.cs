@@ -10,16 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace UAPAPortal
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class OfertaAcademica : ContentPage
+    public partial class Postgrado : ContentPage
     {
-        public OfertaAcademica()
+        public Postgrado()
         {
             InitializeComponent();
-        }
-
-        private async void BtnPregado_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new Pregado());
         }
     }
 }
