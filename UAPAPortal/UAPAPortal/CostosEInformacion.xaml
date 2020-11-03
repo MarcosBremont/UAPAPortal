@@ -24,9 +24,9 @@
 
                 <ScrollView>
                     <StackLayout Padding="10">
-                        <Label Text="Estructura Trimestral para los matriculados partir de 2018." HorizontalOptions="CenterAndExpand" TextColor="#333" FontAttributes="Bold"></Label>
-                        <Label Text="Estructura Cuatrimestral aplica para los matriculados hasta el 2017." HorizontalOptions="CenterAndExpand"  TextColor="#333" FontAttributes="Bold"></Label>
-                        <Label Text="Grado" FontSize="25" Padding="0,10" TextColor="#333" FontAttributes="Bold"></Label>
+                        <Image Source="Banner2"></Image>
+                        <Label Text="La Universidad Abierta Para Adultos te ofrece decenas de programas de grado y postgrado, así como también una amplia oferta de educación continuada en nuestros campus en Santiago, Santo Domingo y Nagua." HorizontalOptions="CenterAndExpand" TextColor="#333" FontAttributes="Bold"></Label>
+                        <Label Text="No importa en qué parte del mundo estés puedes estudiar con nosotros a través de nuestro programa de educación virtual." HorizontalOptions="CenterAndExpand"  TextColor="#333" FontAttributes="Bold"></Label>
 
                         <StackLayout Orientation="Vertical" Padding="0,0,0,0">
                             <Image Source="Grado1"></Image>

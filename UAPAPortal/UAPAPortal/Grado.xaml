@@ -9,10 +9,10 @@
 
                 <Grid VerticalOptions="FillAndExpand" BackgroundColor="#FE9930">
 
-                    <StackLayout Orientation="Horizontal"  HeightRequest="90" Margin="0,0,0,0" HorizontalOptions="FillAndExpand"  >
-                        <ImageButton Source="leftarrow.png" x:Name="BtnAtras" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" HeightRequest="25" Margin="20,0,0,0" ></ImageButton>
+                    <StackLayout Orientation="Horizontal"  HeightRequest="70" Margin="0,0,0,0" HorizontalOptions="FillAndExpand"  >
+                        <ImageButton Source="leftarrow.png" x:Name="BtnAtras" Clicked="BtnAtras_Clicked" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" HeightRequest="25" Margin="20,0,0,0" ></ImageButton>
                         <Label TextColor="WhiteSmoke"
-                               Text="Costos e información financiera" 
+                               Text="GRADO" 
                                FontSize="20"
                                
                                VerticalOptions="CenterAndExpand"
@@ -23,52 +23,10 @@
                 </Grid>
 
                 <ScrollView>
-                    <StackLayout Padding="10">
-                        <Image Source="Banner2" x:Name="Banner"></Image>
-                        <Label Text="Estructura Trimestral para los matriculados partir de 2018." HorizontalOptions="CenterAndExpand" TextColor="#333" FontAttributes="Bold"></Label>
-                        <Label Text="Estructura Cuatrimestral aplica para los matriculados hasta el 2017." HorizontalOptions="CenterAndExpand"  TextColor="#333" FontAttributes="Bold"></Label>
-                        <Label Text="Grado" FontSize="25" Padding="0,10" TextColor="#333" FontAttributes="Bold"></Label>
-
-                        <StackLayout Orientation="Vertical" Padding="0,0,0,0">
-                            <Image Source="Grado1"></Image>
-                        </StackLayout>
-
-
-                        <Label Text="Estructura trimestral pago por mensualidades" Padding="0,9,0,0" FontSize="14" TextColor="#333" BackgroundColor="Transparent" FontAttributes="Bold"/>
-                        <Label Text="A partir de enero de 2018." FontSize="14" TextColor="#333" />
-
-
-                        <StackLayout Orientation="Vertical" Padding="0,9,0,0">
-                            <Image Source="Grado2"></Image>
-                        </StackLayout>
-
-                        <Label Text="Estructura cuatrimestral pago por mensualidades" Padding="0,9,0,0" FontSize="14" TextColor="#333" BackgroundColor="Transparent" FontAttributes="Bold"/>
-                        <Label Text="Hasta matrícula 2017." FontSize="14" TextColor="#333" />
-
-
-                        <StackLayout Orientation="Vertical" Padding="0,9,0,0">
-                            <Image Source="Grado3"></Image>
-                        </StackLayout>
-
-                        <Label Text="Postgrado" Padding="0,9,0,0" FontSize="14" TextColor="#333" BackgroundColor="Transparent" FontAttributes="Bold"/>
-
-                        <StackLayout Orientation="Vertical" Padding="0,9,0,0">
-                            <Image Source="Grado4"></Image>
-                        </StackLayout>
-
-                        <Label Text="Estructura trimestral pago por mensualidades" Padding="0,9,0,0" FontSize="14" TextColor="#333" BackgroundColor="Transparent" FontAttributes="Bold"/>
-                        <Label Text="A partir de enero de 2018." Padding="0,0,0,0" FontSize="14" TextColor="#333" BackgroundColor="Transparent" FontAttributes="Bold"/>
-
-                        <StackLayout Orientation="Vertical" Padding="0,9,0,0">
-                            <Image Source="Grado5"></Image>
-                        </StackLayout>
-
-                        <Label Text="Estructura cuatrimestral pago por mensualidades" Padding="0,9,0,0" FontSize="14" TextColor="#333" BackgroundColor="Transparent" FontAttributes="Bold"/>
-                        <Label Text="Hasta matrícula 2017." Padding="0,0,0,0" FontSize="14" TextColor="#333" BackgroundColor="Transparent" FontAttributes="Bold"/>
-
-                        <StackLayout Orientation="Vertical" Padding="0,9,0,10">
-                            <Image Source="Grado6"></Image>
-                        </StackLayout>
+                    <StackLayout>
+                        <Image Source="Banner2"></Image>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="La Universidad Abierta Para Adultos te ofrece decenas de programas de grado y postgrado, así como también una amplia oferta de educación continuada en nuestros campus en Santiago, Santo Domingo y Nagua." HorizontalOptions="CenterAndExpand"  ></Label>
+                        <Label  Padding="10,0,10,0"  TextColor="#333"  Text="No importa en qué parte del mundo estés puedes estudiar con nosotros a través de nuestro programa de educación virtual." HorizontalOptions="CenterAndExpand" ></Label>
 
 
                     </StackLayout>

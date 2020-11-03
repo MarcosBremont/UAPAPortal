@@ -16,5 +16,10 @@ namespace UAPAPortal
         {
             InitializeComponent();
         }
+
+        private async void BtnAtras_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
+        }
     }
 }

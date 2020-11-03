@@ -3,10 +3,98 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UAPAPortal.EducacionContinuada">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout BackgroundColor="White">
+            <StackLayout Grid.Row="0" Grid.Column="0">
+
+
+                <Grid VerticalOptions="FillAndExpand" BackgroundColor="#FE9930">
+
+                    <StackLayout Orientation="Horizontal"  HeightRequest="200" Margin="0,0,0,0" HorizontalOptions="FillAndExpand"  >
+                        <ImageButton Source="leftarrow.png" x:Name="BtnAtras" Clicked="BtnAtras_Clicked" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" HeightRequest="25" Margin="20,0,0,0" ></ImageButton>
+                        <Label TextColor="WhiteSmoke"
+                               Text="Educación Continuada (INCAPRE)" 
+                               FontSize="20"
+                               VerticalOptions="CenterAndExpand"
+                               FontAttributes="Bold"
+                               Margin="0,0,0,0"
+                               />
+                    </StackLayout>
+                </Grid>
+
+                <ScrollView>
+                    <StackLayout>
+                        
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="El Instituto de Capacitación Profesional y Empresarial es un organismo vinculado a la Universidad Abierta Para Adultos (UAPA), orientado a la promoción y ejecución de la educación permanente, bajo el entendido de que volver a las aulas para afrontar exitosamente las novedades que surgen en la vida privada, profesional y laboral, es una inversión rentable." HorizontalOptions="CenterAndExpand"  ></Label>
+                        <Label  Padding="10,0,10,0"  TextColor="#333"  Text="Por nuestra metodología de trabajo intensiva y activa, somos la opción más adecuada tanto para los empresarios que se preocupan por la preparación y actualización constante de su personal, lo mismo que para las personas que por sus múltiples ocupaciones no pueden asistir a un programa regular de estudios." HorizontalOptions="CenterAndExpand" ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="DIPLOMADOS." FontAttributes="Bold"  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="Negocios:" FontAttributes="Bold"  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Alta Gerencia."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Gestión Financiera."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Contabilidad Impositiva."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Gestión del Talento Humano."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Visita Médica Profesional."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Legislación Laboral en la Gestión Empresarial."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Elaboración y Desarrollo de Planes Estratégico."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Gestión Estratégica de la marca personal."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Elaboración y evaluación de proyectos."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="Ingeniería y Tecnología:" FontAttributes="Bold" HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Manejo de redes."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Gerencia estratégica de tecnología de la Comunicación y la información (TIC)."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="Derecho: " FontAttributes="Bold" HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Corretaje Inmobiliario."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Derecho procesal penal."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Derecho procesal constitucional."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Derecho migratorio y consular en los EE. UU."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Derecho migratorio, consular y residencia."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Procedimientos civiles."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="Psicología y Salud Mental: " FontAttributes="Bold" HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Terapia familiar."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Trastorno y terapia de aprendizaje."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Abordaje terapéutico del trauma.  en niños y adolescentes."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Pruebas Psicométricas."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="Idiomas: " FontAttributes="Bold" HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Inglés."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Francés."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="Educación: " FontAttributes="Bold" HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Planeación y evaluación educativa."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Logopedia."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="Salud y Belleza:"  FontAttributes="Bold"  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Cosmiatría Avanzada."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Nutrición y Dietética."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Auditoría Médica."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Auxiliar médico estético."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="CURSOS -TALLERES -SEMINARIOS-INCAPRE" FontAttributes="Bold" HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Gestión estratégica del clima organizacional."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Técnica y redacción a las querellas."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Evaluación por competencias en la educación en el nivel inicial."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Francés intermedio avanzado."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Ingles intermedio avanzado."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Técnica moderna de litigación"  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Banca de inversión e instrumentos financieros."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Oratoria y manejo del miedo escénico."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•DSM5."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Servicio memorable al cliente."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Ms office."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Desarrollo de liderazgo gerencial."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Corretaje inmobiliario."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Administración estratégica del tiempo."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Redacción e implementación de informes técnicos"  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Inteligencia emocional."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Desarrollo de equipos de alto rendimiento."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Etiqueta y desarrollo de imagen corporativa"  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Desarrollo de autoestima y valoración personal."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•Herramientas de liderazgo desde una perspectiva de coaching."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333" Text="•La aplicación de la suspensión del procedimiento."  HorizontalOptions="Start"  ></Label>
+                        <Label  Padding="10,0,10,10" TextColor="#333" Text="•Aplicación de la teoría del delito, en los delitos contra la propiedad."  HorizontalOptions="Start"  ></Label>
+                       
+                        
+                        
+                     
+                    </StackLayout>
+                </ScrollView>
+
+
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

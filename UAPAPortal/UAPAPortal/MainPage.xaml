@@ -93,6 +93,7 @@
                                     Text="Departamentos"
                                     x:Name="BtnDepartamentos"
                                     FontSize="10"
+                                    Clicked="BtnDepartamentos_Clicked"
                                     FontAttributes="Bold"
                                     ImageSource="departamentos"
                                     HeightRequest="80"

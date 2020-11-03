@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace UAPAPortal
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Postgrado : ContentPage
+    public partial class ESCUELAEDUCACION : ContentPage
     {
-        public Postgrado()
+        public ESCUELAEDUCACION()
         {
             InitializeComponent();
         }

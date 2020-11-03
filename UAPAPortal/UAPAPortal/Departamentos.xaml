@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="UAPAPortal.OfertaAcademica">
+             x:Class="UAPAPortal.Departamentos">
     <ContentPage.Content>
         <StackLayout BackgroundColor="White">
             <StackLayout Grid.Row="0" Grid.Column="0">
@@ -11,7 +11,7 @@
                     <StackLayout Orientation="Horizontal"  HeightRequest="70" Margin="0,0,0,0" HorizontalOptions="FillAndExpand" >
                         <ImageButton Source="leftarrow.png" x:Name="BtnAtras" Clicked="BtnAtras_Clicked" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" HeightRequest="25" Margin="20,0,0,0" ></ImageButton>
                         <Label TextColor="WhiteSmoke"
-                               Text="OFERTA ACADEMICA" 
+                               Text="DEPARTAMENTOS " 
                                FontSize="22"
                                VerticalOptions="CenterAndExpand"
                                FontAttributes="Bold"
@@ -33,7 +33,7 @@
                     <RowDefinition Height="100"/>
 
                 </Grid.RowDefinitions>
-                
+
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
@@ -44,9 +44,9 @@
                                           
                                             Grid.Row="0"
                                             Grid.Column="0"
-                                            x:Name="BtnPregado"
-                                            Text="Pregado"
-                                            Clicked="BtnPregado_Clicked"
+                                            x:Name="BtnEscuelas"
+                                            Text="Escuelas"
+                    Clicked="BtnEscuelas_Clicked"
                                             ImageSource="university"
                                             TextColor="White"
                                             HeightRequest="80"
@@ -59,9 +59,9 @@
                                             Margin="5,20,5,5"
                                             Grid.Row="0"
                                             Grid.Column="1"
-                                            Text="Grado"
-                                            Clicked="BtnGrado_Clicked"
-                                            x:Name="BtnGrado"
+                                            Text="Departamentos"
+                                            FontSize="12"
+                                            x:Name="BtnDepartamentos"
                                             TextColor="White"
                                             ImageSource="study"
                                             HeightRequest="80"
@@ -73,39 +73,21 @@
                                             Margin="5,5,5,5"
                                             Grid.Row="1"
                                             Grid.Column="0"
-                                            Text="Postgrado"
-                    Clicked="BtnPostgrado_Clicked"
+                                            Text="Programas y Centros"
+                                      
                                             TextColor="White"
-                                            x:Name="BtnPostgrado"
+                                            x:Name="btnProgramasYCentros"
                                             ImageSource="ofertaacademica"
                                             HeightRequest="80"
                                             BackgroundColor="#09183A"
                                             CornerRadius="8">
                 </Button>
 
-                <Button 
-                                            Margin="5,5,5,5"
-                 
-                                            Grid.Row="1"
-                                            Grid.Column="1"
-                                            Text="Educacion continuada"
-                                            x:Name="BtnEducacion"
-                    Clicked="BtnEducacion_Clicked" 
-                                            FontSize="10"
-                                            TextColor="White"
-                                            FontAttributes="Bold"
-                                            ImageSource="departamentos"
-                                            HeightRequest="80"
-                                            BackgroundColor="#09183A"
-                                            CornerRadius="8" >
-                </Button>
 
-                
+
+               
+
             </Grid>
-
-            <Label Text="Created By MarcosBremont" HorizontalOptions="CenterAndExpand" Margin="0,15,0,0"></Label>
-
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

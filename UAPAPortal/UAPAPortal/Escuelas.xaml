@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="UAPAPortal.OfertaAcademica">
+             x:Class="UAPAPortal.Escuelas">
     <ContentPage.Content>
         <StackLayout BackgroundColor="White">
             <StackLayout Grid.Row="0" Grid.Column="0">
@@ -11,7 +11,7 @@
                     <StackLayout Orientation="Horizontal"  HeightRequest="70" Margin="0,0,0,0" HorizontalOptions="FillAndExpand" >
                         <ImageButton Source="leftarrow.png" x:Name="BtnAtras" Clicked="BtnAtras_Clicked" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" HeightRequest="25" Margin="20,0,0,0" ></ImageButton>
                         <Label TextColor="WhiteSmoke"
-                               Text="OFERTA ACADEMICA" 
+                               Text="ESCUELAS " 
                                FontSize="22"
                                VerticalOptions="CenterAndExpand"
                                FontAttributes="Bold"
@@ -30,13 +30,16 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="100"/>
                     <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>     
                     <RowDefinition Height="100"/>
 
+
                 </Grid.RowDefinitions>
-                
+
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
+                   
                 </Grid.ColumnDefinitions>
 
 
@@ -44,12 +47,13 @@
                                           
                                             Grid.Row="0"
                                             Grid.Column="0"
-                                            x:Name="BtnPregado"
-                                            Text="Pregado"
-                                            Clicked="BtnPregado_Clicked"
+                                            x:Name="BtnEscuelaDeCiencias"
+                    Clicked="BtnEscuelaDeCiencias_Clicked"
+                                            Text="Escuela de Ciencias Jurídicas y Políticas"
                                             ImageSource="university"
                                             TextColor="White"
                                             HeightRequest="80"
+                    FontSize="12"
                                             BackgroundColor="#09183A"
                                             Margin="5,20,5,5"
                                             Visual="Material"
@@ -59,9 +63,10 @@
                                             Margin="5,20,5,5"
                                             Grid.Row="0"
                                             Grid.Column="1"
-                                            Text="Grado"
-                                            Clicked="BtnGrado_Clicked"
-                                            x:Name="BtnGrado"
+                                            Text="Escuela de Educación"
+                                            FontSize="12"
+                    Clicked="BtnEscuelaEducacion_Clicked"
+                                            x:Name="BtnEscuelaEducacion"
                                             TextColor="White"
                                             ImageSource="study"
                                             HeightRequest="80"
@@ -73,10 +78,9 @@
                                             Margin="5,5,5,5"
                                             Grid.Row="1"
                                             Grid.Column="0"
-                                            Text="Postgrado"
-                    Clicked="BtnPostgrado_Clicked"
+                                            Text="Escuela de Ingeniería y Tecnología"
                                             TextColor="White"
-                                            x:Name="BtnPostgrado"
+                                            x:Name="BtnEscuelaDeIngenieria"
                                             ImageSource="ofertaacademica"
                                             HeightRequest="80"
                                             BackgroundColor="#09183A"
@@ -85,27 +89,59 @@
 
                 <Button 
                                             Margin="5,5,5,5"
-                 
                                             Grid.Row="1"
                                             Grid.Column="1"
-                                            Text="Educacion continuada"
-                                            x:Name="BtnEducacion"
-                    Clicked="BtnEducacion_Clicked" 
-                                            FontSize="10"
+                                            Text="Escuela de Negocios"
                                             TextColor="White"
-                                            FontAttributes="Bold"
-                                            ImageSource="departamentos"
+                                            x:Name="BtnEscuelaNegocios"
+                                            ImageSource="ofertaacademica"
                                             HeightRequest="80"
                                             BackgroundColor="#09183A"
-                                            CornerRadius="8" >
+                                            CornerRadius="8">
                 </Button>
 
-                
+                <Button 
+                                            Margin="5,5,5,5"
+                                            Grid.Row="2"
+                                            Grid.Column="0"
+                                            Text="Escuela de Turismo"
+                                            TextColor="White"
+                                            x:Name="BtnEscuelaTurismo"
+                                            ImageSource="ofertaacademica"
+                                            HeightRequest="80"
+                                            BackgroundColor="#09183A"
+                                            CornerRadius="8">
+                </Button>
+                <Button 
+                                            Margin="5,5,5,5"
+                                            Grid.Row="2"
+                                            Grid.Column="1"
+                                            Text="Escuela de Psicología"
+                                            TextColor="White"
+                                            x:Name="BtnEscuelaPsicologia"
+                                            ImageSource="ofertaacademica"
+                                            HeightRequest="80"
+                                            BackgroundColor="#09183A"
+                                            CornerRadius="8">
+                </Button>
+
+                <Button 
+                                            Margin="5,5,5,5"
+                                            Grid.Row="3"
+                                            Grid.Column="1"
+                                            Text="Escuela de Postgrado"
+                                            TextColor="White"
+                                            x:Name="BtnEscuelaPostgrado"
+                                            ImageSource="ofertaacademica"
+                                            HeightRequest="80"
+                                            BackgroundColor="#09183A"
+                                            CornerRadius="8">
+                </Button>
+
+
+
+
             </Grid>
-
-            <Label Text="Created By MarcosBremont" HorizontalOptions="CenterAndExpand" Margin="0,15,0,0"></Label>
-
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
