@@ -32,5 +32,34 @@ namespace UAPAPortal
             await Navigation.PushModalAsync(new ESCUELAEDUCACION());
 
         }
+
+        private async void BtnEscuelaDeIngenieria_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new ESCUELAEDUCACION());
+        }
+
+        private async void BtnEscuelaNegocios_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new EscueladeNegocios());
+
+        }
+
+        private async void BtnEscuelaTurismo_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new EscueladeTurismo());
+
+        }
+
+        private async void BtnEscuelaPsicologia_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new EscueladePsicologia());
+
+        }
+
+        private async void BtnEscuelaPostgrado_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new EscueladePostgrado());
+
+        }
     }
 }

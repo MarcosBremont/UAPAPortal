@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="UAPAPortal.Escuelas">
+             x:Class="UAPAPortal.ListadeDepartamentos">
     <ContentPage.Content>
         <StackLayout BackgroundColor="White">
             <StackLayout Grid.Row="0" Grid.Column="0">
@@ -11,7 +11,7 @@
                     <StackLayout Orientation="Horizontal"  HeightRequest="70" Margin="0,0,0,0" HorizontalOptions="FillAndExpand" >
                         <ImageButton Source="leftarrow.png" x:Name="BtnAtras" Clicked="BtnAtras_Clicked" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" HeightRequest="25" Margin="20,0,0,0" ></ImageButton>
                         <Label TextColor="WhiteSmoke"
-                               Text="ESCUELAS " 
+                               Text="Departementos " 
                                FontSize="22"
                                VerticalOptions="CenterAndExpand"
                                FontAttributes="Bold"
@@ -30,7 +30,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition Height="100"/>
                     <RowDefinition Height="100"/>
-                    <RowDefinition Height="100"/>     
+                    <RowDefinition Height="100"/>
                     <RowDefinition Height="100"/>
 
 
@@ -39,7 +39,7 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
-                   
+
                 </Grid.ColumnDefinitions>
 
 
@@ -47,13 +47,13 @@
                                           
                                             Grid.Row="0"
                                             Grid.Column="0"
-                                            x:Name="BtnEscuelaDeCiencias"
-                    Clicked="BtnEscuelaDeCiencias_Clicked"
-                                            Text="Escuela de Ciencias Jurídicas y Políticas"
+                                            x:Name="btnRegistro"
+                                           
+                                            Text="Registro"
                                             ImageSource="university"
                                             TextColor="White"
                                             HeightRequest="80"
-                    FontSize="12"
+                                            FontSize="12"
                                             BackgroundColor="#09183A"
                                             Margin="5,20,5,5"
                                             Visual="Material"
@@ -63,10 +63,10 @@
                                             Margin="5,20,5,5"
                                             Grid.Row="0"
                                             Grid.Column="1"
-                                            Text="Escuela de Educación"
+                                            Text="Ciclo Basico"
                                             FontSize="12"
-                    Clicked="BtnEscuelaEducacion_Clicked"
-                                            x:Name="BtnEscuelaEducacion"
+                                           
+                                            x:Name="BtnCiclo"
                                             TextColor="White"
                                             ImageSource="study"
                                             HeightRequest="80"
@@ -77,11 +77,12 @@
                 <Button 
                                             Margin="5,5,5,5"
                                             Grid.Row="1"
+                                            FontSize="10"
                                             Grid.Column="0"
-                                            Text="Escuela de Ingeniería y Tecnología"
+                                            Text="Investigación y Divulgación Científica"
                                             TextColor="White"
-                    Clicked="BtnEscuelaDeIngenieria_Clicked"
-                                            x:Name="BtnEscuelaDeIngenieria"
+                    
+                                            x:Name="BtnInvestigacionYDivulga"
                                             ImageSource="ofertaacademica"
                                             HeightRequest="80"
                                             BackgroundColor="#09183A"
@@ -92,10 +93,11 @@
                                             Margin="5,5,5,5"
                                             Grid.Row="1"
                                             Grid.Column="1"
-                                            Text="Escuela de Negocios"
+                    FontSize="10"
+                                            Text="Extensión Universitaria"
                                             TextColor="White"
-                    Clicked="BtnEscuelaNegocios_Clicked"
-                                            x:Name="BtnEscuelaNegocios"
+                    
+                                            x:Name="BtnExtensionU"
                                             ImageSource="ofertaacademica"
                                             HeightRequest="80"
                                             BackgroundColor="#09183A"
@@ -106,10 +108,10 @@
                                             Margin="5,5,5,5"
                                             Grid.Row="2"
                                             Grid.Column="0"
-                                            Text="Escuela de Turismo"
+                                            Text="Sociedad Ecológica"
                                             TextColor="White"
-                    Clicked="BtnEscuelaTurismo_Clicked"
-                                            x:Name="BtnEscuelaTurismo"
+                    FontSize="10"
+                                            x:Name="BtnSociedadE"
                                             ImageSource="ofertaacademica"
                                             HeightRequest="80"
                                             BackgroundColor="#09183A"
@@ -119,10 +121,24 @@
                                             Margin="5,5,5,5"
                                             Grid.Row="2"
                                             Grid.Column="1"
-                                            Text="Escuela de Psicología"
+                                            Text="Publicaciones"
                                             TextColor="White"
-                    Clicked="BtnEscuelaPsicologia_Clicked"
-                                            x:Name="BtnEscuelaPsicologia"
+                    FontSize="10"
+                                            x:Name="BtnPublicaciones"
+                                            ImageSource="ofertaacademica"
+                                            HeightRequest="80"
+                                            BackgroundColor="#09183A"
+                                            CornerRadius="8">
+                </Button>
+
+                <Button 
+                                            Margin="5,5,5,5"
+                                            Grid.Row="3"
+                                            Grid.Column="0"
+                                            Text="Voluntariado UAPA"
+                                            TextColor="White"
+                    FontSize="10"
+                                            x:Name="BtnVoluntariado"
                                             ImageSource="ofertaacademica"
                                             HeightRequest="80"
                                             BackgroundColor="#09183A"
@@ -133,10 +149,10 @@
                                             Margin="5,5,5,5"
                                             Grid.Row="3"
                                             Grid.Column="1"
-                                            Text="Escuela de Postgrado"
+                                            Text="Innovación y Desarrollo"
                                             TextColor="White"
-                    Clicked="BtnEscuelaPostgrado_Clicked"
-                                            x:Name="BtnEscuelaPostgrado"
+                   FontSize="10"
+                                            x:Name="BtnInnovacion"
                                             ImageSource="ofertaacademica"
                                             HeightRequest="80"
                                             BackgroundColor="#09183A"

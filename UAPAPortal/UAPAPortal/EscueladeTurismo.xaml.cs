@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace UAPAPortal
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Departamentos : ContentPage
+    public partial class EscueladeTurismo : ContentPage
     {
-        public Departamentos()
+        public EscueladeTurismo()
         {
             InitializeComponent();
         }
@@ -21,17 +21,5 @@ namespace UAPAPortal
         {
             await Navigation.PopModalAsync();
         }
-
-        private async void BtnEscuelas_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new Escuelas());
-        }
-
-        private async void BtnDepartamentos_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new ListadeDepartamentos());
-        }
-
-      
     }
 }

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UAPAPortal.EscueladeTurismo">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout Grid.Row="0" Grid.Column="0">
+
+
+                <Grid VerticalOptions="FillAndExpand" BackgroundColor="#FE9930">
+
+                    <StackLayout Orientation="Horizontal"  HeightRequest="70" Margin="0,0,0,0" HorizontalOptions="FillAndExpand"  >
+
+                        <ImageButton Source="leftarrow.png" x:Name="BtnAtras" Clicked="BtnAtras_Clicked" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" HeightRequest="25" Margin="20,0,0,0" ></ImageButton>
+
+                        <Label TextColor="WhiteSmoke"
+                               Text="Escuela de Turismo" 
+                               FontSize="20"
+                               VerticalOptions="CenterAndExpand"
+                               FontAttributes="Bold"
+                               Margin="0,0,0,0"
+                               />
+
+                    </StackLayout>
+                </Grid>
+
+                <ScrollView>
+
+                    <StackLayout>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="La Escuela de Turismo es una división académica de la Universidad que tiene a su cargo las actividades docentes o formativas que son parte del plan de estudio de la carrera de Administración de Empresas Turísticas." HorizontalOptions="CenterAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="La Licenciatura en Administración de Empresas Turísticas es una oferta académica que tiene como objetivo principal formar profesionales en el área de este tipo de empresas con una preparación integral de calidad sobre la base de valores proactivos, con liderazgo y conocimientos de las nuevas tendencias del turismo internacional, capaces de desarrollar las aplicaciones prácticas y científicas en relación con las necesidades estratégicas de las empresas y organizaciones turísticas, de cara a los retos de la globalización y el fortalecimiento de la competitividad de la oferta turística de la República Dominicana." HorizontalOptions="CenterAndExpand"  ></Label>
+                        <Label  Padding="10,0,10,0" FontAttributes="Bold"  TextColor="#333"  Text="Carrera:" HorizontalOptions="Start" ></Label>
+                        <Label  Padding="10,0,10,0"  TextColor="#333" Text="• Licenciatura en Administración de Empresas Turísticas." HorizontalOptions="Start" ></Label>
+                       
+                    </StackLayout>
+                </ScrollView>
+
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
