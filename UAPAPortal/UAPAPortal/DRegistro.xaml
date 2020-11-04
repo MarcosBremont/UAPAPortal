@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UAPAPortal.DRegistro">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout Grid.Row="0" Grid.Column="0">
+
+
+                <Grid VerticalOptions="FillAndExpand" BackgroundColor="#FE9930">
+
+                    <StackLayout Orientation="Horizontal"  HeightRequest="150" Margin="0,0,0,0" HorizontalOptions="FillAndExpand"  >
+
+                        <ImageButton Source="leftarrow.png" x:Name="BtnAtras" Clicked="BtnAtras_Clicked" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" HeightRequest="25" Margin="20,0,0,0" ></ImageButton>
+
+                        <Label TextColor="WhiteSmoke"
+                               Text="Registro" 
+                               FontSize="20"
+                               VerticalOptions="CenterAndExpand"
+                               FontAttributes="Bold"
+                               Margin="0,0,0,0"
+                               />
+
+                    </StackLayout>
+                </Grid>
+
+                <ScrollView>
+
+                    <StackLayout>
+                        <Image Source="BannerDepartamentoRegistro.png"></Image>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="El Departamento de Registro es la instancia de la Institución, encargada de registrar y conservar de manera estricta y confidencial los documentos del participante y los resultados de su historial académico. Además es responsable de expedir a nombre de la Universidad los siguientes documentos: copia oficial del expediente académico de un participante, calificaciones oficiales de un participante, certificación de títulos y diplomas, certificación de documentos entregados con fines académicos, certificación de estudio, récord de notas y otros documentos que el Consejo Académico decidiere pueden ser otorgado por el departamento." HorizontalOptions="CenterAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="MISIÓN" HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="Garantizar la transparencia, idoneidad y seguridad en los procesos académicos bajo su responsabilidad concerniente a la trayectoria académica de los participantes, apegados a los valores éticos y morales." HorizontalOptions="CenterAndExpand"  ></Label>
+                        <Label  Padding="10,0,10,0" TextColor="#333"  Text="VISIÓN" HorizontalOptions="Start" ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="Ser un departamento modelo en eficiencia, eficacia y transparencia de sus procesos para la satisfacción plena de los participantes." HorizontalOptions="CenterAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="Los Servicios que ofrece el Departamento de Registro:" HorizontalOptions="CenterAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="1) Prematrícula o preselección de asignaturas." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="2) Reinscripción." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="3) Reingreso." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="4) Cambio, inclusión y retiro de asignaturas." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="5) Registro de convalidación, exoneración y validación." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="6) Transferencia de Recintos." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="7) Cambio de carrera." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="8) Seguimiento a participantes en prueba académica." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="9) Expedición de los siguientes documentos (Récords de Notas, Certificación de Grado, Certificación copia de Título, Certificación de Estudios, Cotización de carrera, Copia de documentos del participante, Carga horaria para homologación)" HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="10) Solicitud e Inscripción del Curso Final de Grado y de Tesis." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="11) Solicitud de Graduación." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" FontAttributes="Bold" Text="HORARIO DE SERVICIO DE REGISTRO:" HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,5,10,0" TextColor="#333" Text="Lunes y martes: 9:00 A.M. – 6:00 P.M." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,5,10,0" TextColor="#333" Text="Miércoles, jueves y viernes: 9:00 A.M. – 7:00 P.M." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,5,10,0" TextColor="#333" Text="Sábado: 7:30 A.M. – 6:00 P.M." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,5,10,10" TextColor="#333" Text="Domingo: 7:30 A.M. – 2:00 P.M." HorizontalOptions="StartAndExpand"  ></Label>
+                       
+
+
+                    </StackLayout>
+                </ScrollView>
+
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

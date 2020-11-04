@@ -21,5 +21,22 @@ namespace UAPAPortal
         {
             await Navigation.PopModalAsync();
         }
+
+        private async void btnRegistro_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new DRegistro());
+        }
+
+        private async void BtnCiclo_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new DCicloBasico());
+
+        }
+
+        private async void BtnInvestigacionYDivulga_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new DInvestigacionyDivulgacion());
+
+        }
     }
 }

@@ -48,7 +48,7 @@
                                             Grid.Row="0"
                                             Grid.Column="0"
                                             x:Name="btnRegistro"
-                                           
+                                            Clicked="btnRegistro_Clicked"
                                             Text="Registro"
                                             ImageSource="university"
                                             TextColor="White"
@@ -65,7 +65,7 @@
                                             Grid.Column="1"
                                             Text="Ciclo Basico"
                                             FontSize="12"
-                                           
+                                           Clicked="BtnCiclo_Clicked"
                                             x:Name="BtnCiclo"
                                             TextColor="White"
                                             ImageSource="study"
@@ -81,7 +81,7 @@
                                             Grid.Column="0"
                                             Text="Investigación y Divulgación Científica"
                                             TextColor="White"
-                    
+                    Clicked="BtnInvestigacionYDivulga_Clicked"
                                             x:Name="BtnInvestigacionYDivulga"
                                             ImageSource="ofertaacademica"
                                             HeightRequest="80"

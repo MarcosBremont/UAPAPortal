@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UAPAPortal.DExtensionUniversitaria">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout Grid.Row="0" Grid.Column="0">
+
+
+                <Grid VerticalOptions="FillAndExpand" BackgroundColor="#FE9930">
+
+                    <StackLayout Orientation="Horizontal"  HeightRequest="200" Margin="0,0,0,0" HorizontalOptions="FillAndExpand"  >
+
+                        <ImageButton Source="leftarrow.png" x:Name="BtnAtras" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" HeightRequest="25" Margin="20,0,0,0" ></ImageButton>
+
+                        <Label TextColor="WhiteSmoke"
+                               Text="Extensión Universitaria" 
+                               FontSize="20"
+                               VerticalOptions="CenterAndExpand"
+                               FontAttributes="Bold"
+                               Margin="0,0,0,0"
+                               />
+
+                    </StackLayout>
+                </Grid>
+
+                <ScrollView>
+
+                    <StackLayout>
+
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="El Departamento de Investigación y Divulgación Científica de la UAPA es una dependencia de la  Vicerrectoría de Investigación, Innovación y Postgrado. La Universidad concibe la investigación como un  proceso sistemático, reflexivo, metódico, crítico y creativo, con la finalidad de buscar nuevos conocimientos  para la solución de problemas prácticos vinculados a las necesidades de la Institución y del país." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="Son objetivos de la UAPA en relación a su función de investigación:" HorizontalOptions="CenterAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="1. Desarrollar investigaciones sobre problemas fundamentales de la sociedad e incorporar sus resultados a la labor docente." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="2. Difundir en la sociedad los avances más recientes de los conocimientos y el desarrollo tecnológico." HorizontalOptions="CenterAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="3. Realizar experiencias de investigaciones  educativas que contribuyan a desarrollar nuevas formas de organización universitaria y enfoques metodológicos novedosos." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="4. Contribuir con la sociedad mediante el desarrollo de una conciencia crítica de sus ciudadanos para solucionar los problemas básicos de la misma." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="5. Contribuir a la formación metodológica y científica de facilitadores investigadores de la Universidad." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" FontAttributes="Bold" Text="Las principales líneas de investigación  son  las siguientes:" HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="1. Procesos institucionales" HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="2. Educación" HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="3. Mujer y familia" HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="4. Cambio climático y gestión ambiental" HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="5. Tecnología de la información y la comunicación." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="6. Pobreza, desigualdad y marginalidad social" HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="7. Democracia, gobernabilidad y seguridad ciudadana" HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="8. Innovación" HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="9. Violencia, criminalidad y resiliencia" HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="10. Territorialidad, riesgos y desarrollo local" HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="11. Justicia y democracia" HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="12. Economía y desarrollo" HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="13. Población, inclusión social y culturalidad." HorizontalOptions="StartAndExpand"  ></Label>
+
+
+                    </StackLayout>
+                </ScrollView>
+
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
