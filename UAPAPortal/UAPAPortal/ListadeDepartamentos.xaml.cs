@@ -38,5 +38,20 @@ namespace UAPAPortal
             await Navigation.PushModalAsync(new DInvestigacionyDivulgacion());
 
         }
+
+        private async void BtnExtensionU_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new DExtensionUni());
+        }
+
+        private async void BtnSociedadE_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new DSociedadEcologica());
+        }
+
+        private async void BtnPublicaciones_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new DPublicaciones());
+        }
     }
 }
