@@ -3,40 +3,47 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="UAPAPortal.PYCcatedraconvivencia">
     <ContentPage.Content>
-        <AbsoluteLayout>
-            <CarouselView
-            x:Name="TheCarousel"
-            AbsoluteLayout.LayoutBounds="0,0,1,1"
-            AbsoluteLayout.LayoutFlags="All"
-            IndicatorView="indicatorview">
-                <CarouselView.ItemTemplate>
-                    <DataTemplate>
-                        <AbsoluteLayout>
-                            <StackLayout
-                            AbsoluteLayout.LayoutBounds=
-                            "0.5,0.3,AutoSize,AutoSize"
-                            AbsoluteLayout.LayoutFlags=
-                            "PositionProportional"
-                            HorizontalOptions="Center">
-                                <Label
-                                FontSize="Title"
-                                HorizontalOptions="Center"
-                                HorizontalTextAlignment="Center"
-                                Text=""
-                                VerticalOptions="Center" />
-                            </StackLayout>
-                        </AbsoluteLayout>
-                    </DataTemplate>
-                </CarouselView.ItemTemplate>
-            </CarouselView>
-            <IndicatorView
-            x:Name="indicatorview"
-            AbsoluteLayout.LayoutBounds="0.5,0.95,100,100"
-            AbsoluteLayout.LayoutFlags="PositionProportional"
-            IndicatorColor="LightGray"
-            IndicatorSize="10"
-            SelectedIndicatorColor="Black" />
-        </AbsoluteLayout>
+        <StackLayout BackgroundColor="White">
+            <StackLayout Grid.Row="0" Grid.Column="0">
+
+
+                <Grid VerticalOptions="FillAndExpand" BackgroundColor="#FE9930">
+
+                    <StackLayout Orientation="Horizontal"  HeightRequest="70" Margin="0,0,0,0" HorizontalOptions="FillAndExpand"  >
+
+                        <ImageButton Source="leftarrow.png" x:Name="BtnAtras" Clicked="BtnAtras_Clicked" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" HeightRequest="25" Margin="20,0,0,0" ></ImageButton>
+
+                        <Label TextColor="WhiteSmoke"
+                               Text="Catedra de Convivencia Pacífica" 
+                               FontSize="20"
+                               VerticalOptions="CenterAndExpand"
+                               FontAttributes="Bold"
+                               Margin="0,0,0,0"
+                               />
+
+                    </StackLayout>
+                </Grid>
+                <ScrollView Orientation="Horizontal">
+                    <StackLayout>
+                    <Image Source="1"></Image>
+                    <Image Source="2"></Image>
+                    <Image Source="3"></Image>
+                    </StackLayout>
+                </ScrollView>
+
+                <ScrollView>
+
+                    <StackLayout>
+
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="Desde una mirada reflexiva al aumento de la violencia en la República Dominicana, y cómo esta afecta el modo de vida de las personas, la UAPA crea la Cátedra de Convivencia Pacífica, la cual constituye un espacio para desarrollar conocimientos sobre la convivencia pacífica y la cultura de paz, con miras a aportar en la creación de estilos de vidas sanos, sin violencia en los ámbitos personal, familiar y social." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="Los objetivos específicos de la Cátedra son crear espacios de diálogo y discusión, en torno a la construcción conjunta de la convivencia pacífica, mediante foros, seminarios y mesas de trabajo. Generar estrategias y habilidades que ayuden a enfrentar los conflictos de forma no violenta. Contrarrestar la violencia a través de campañas de educación. Coadyuvar en la creación de políticas públicas a favor de la protección de sectores vulnerables. Así como también, reconocer personas e instituciones que sean testimonio de cultura pacífica en su accionar." HorizontalOptions="CenterAndExpand"  ></Label>
+
+                    </StackLayout>
+                </ScrollView>
+
+
+            </StackLayout>
+        </StackLayout>
 
     </ContentPage.Content>
 </ContentPage>

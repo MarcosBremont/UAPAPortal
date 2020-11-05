@@ -15,14 +15,12 @@ namespace UAPAPortal
         public PYCcatedraconvivencia()
         {
             InitializeComponent();
-            var list = new List<string>
-            {
-                "Hey",
-                "Did you check the",
-                "The CarouselView",
-                "In Xamarin.Forms?"
-            };
-            TheCarousel.ItemsSource = list;
+           
+        }
+
+        private async void BtnAtras_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
         }
     }
 }
