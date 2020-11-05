@@ -32,6 +32,9 @@ namespace UAPAPortal
             await Navigation.PushModalAsync(new ListadeDepartamentos());
         }
 
-      
+        private async void btnProgramasYCentros_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new ProgramasYCentros());
+        }
     }
 }

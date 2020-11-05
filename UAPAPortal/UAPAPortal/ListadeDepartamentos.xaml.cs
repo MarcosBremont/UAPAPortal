@@ -53,5 +53,15 @@ namespace UAPAPortal
         {
             await Navigation.PushModalAsync(new DPublicaciones());
         }
+
+        private async void BtnVoluntariado_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new DVoluntariado());
+        }
+
+        private async void BtnInnovacion_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new DVicerrectoriadeInnovacionyDesarrollo());
+        }
     }
 }

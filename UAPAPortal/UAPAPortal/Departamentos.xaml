@@ -78,6 +78,7 @@
                                             Text="Programas y Centros"
                                             FontSize="10"
                                             TextColor="White"
+                    Clicked="btnProgramasYCentros_Clicked"
                                             x:Name="btnProgramasYCentros"
                                             ImageSource="ofertaacademica"
                                             HeightRequest="80"

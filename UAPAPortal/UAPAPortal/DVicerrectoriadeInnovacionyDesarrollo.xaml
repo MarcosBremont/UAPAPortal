@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UAPAPortal.DVicerrectoriadeInnovacionyDesarrollo">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout Grid.Row="0" Grid.Column="0">
+
+
+                <Grid VerticalOptions="FillAndExpand" BackgroundColor="#FE9930">
+
+                    <StackLayout Orientation="Horizontal"  HeightRequest="150" Margin="0,0,0,0" HorizontalOptions="FillAndExpand"  >
+
+                        <ImageButton Source="leftarrow.png" x:Name="BtnAtras" Clicked="BtnAtras_Clicked" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" HeightRequest="25" Margin="20,0,0,0" ></ImageButton>
+
+                        <Label TextColor="WhiteSmoke"
+                               Text="Vicerrectoría de Innovación y Desarrollo" 
+                               FontSize="20"
+                               VerticalOptions="CenterAndExpand"
+                               FontAttributes="Bold"
+                               Margin="0,0,0,0"
+                               />
+
+                    </StackLayout>
+                </Grid>
+
+                <ScrollView>
+
+                    <StackLayout>
+                        <WebView x:Name="webview" HeightRequest="315" WidthRequest="560"></WebView>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="La Universidad Abierta Para Adultos (UAPA) potencia la competitividad y evolución continua a través de la Vicerrectoría de Innovación y Desarrollo. Nuestra misión es impulsar las capacidades y el accionar innovador y emprendedor en todas las personas que integran la comunidad de UAPA." HorizontalOptions="CenterAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="Establecemos la innovación como el medio para propiciar el surgimiento de nuevas ideas que se traduzcan en  cambios y mejoras, a fin de lograr un incremento de valor para participantes, facilitadores, empleados, y la sociedad dominicana. El fomento de una cultura de innovación, desarrollo de capacidades y ejecución de proyectos parten desde la Dirección de Innovación y se afianzan a lo largo y ancho de la institución." HorizontalOptions="CenterAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,10" TextColor="#333" Text="Procuramos una cultura emprendedora en la comunidad universitaria, orientada a impulsar la vocación empresarial, la innovación y la autoempleabilidad a través del CUDE. Así mismo impulsa el desarrollo de soluciones integrales para mejorar la competitividad de las pequeñas y medianas empresas en Santo Domingo Este y Nagua, con el accionar de los Centros MIPYMES en estas localidades." HorizontalOptions="CenterAndExpand"  ></Label>
+                    </StackLayout>
+                </ScrollView>
+
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
