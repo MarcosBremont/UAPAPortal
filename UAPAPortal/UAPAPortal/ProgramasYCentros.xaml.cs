@@ -36,5 +36,10 @@ namespace UAPAPortal
         {
             await Navigation.PushModalAsync(new PYCProfundo());
         }
+
+        private async  void BtnPuse_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new PyCPUSE());
+        }
     }
 }

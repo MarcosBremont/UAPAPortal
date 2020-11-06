@@ -96,7 +96,7 @@
                                             FontSize="10"
                                             Text="PUSE"
                                             TextColor="White"
-                                       
+                                       Clicked="BtnPuse_Clicked"
                                             x:Name="BtnPuse"
                                             ImageSource="ofertaacademica"
                                             HeightRequest="80"
