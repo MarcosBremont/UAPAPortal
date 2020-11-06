@@ -154,7 +154,7 @@
                                             Grid.Column="1"
                                             Text="CINGEP"
                                             TextColor="White"
-                                          
+                                            Clicked="BtnCingep_Clicked"
                                             FontSize="10"
                                             x:Name="BtnCingep"
                                             ImageSource="ofertaacademica"

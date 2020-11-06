@@ -57,5 +57,10 @@ namespace UAPAPortal
         {
             await Navigation.PushModalAsync(new PyCCuce());
         }
+
+        private async void BtnCingep_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new PyCCINGEP());
+        }
     }
 }

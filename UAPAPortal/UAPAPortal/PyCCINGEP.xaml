@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UAPAPortal.PyCCINGEP">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout Grid.Row="0" Grid.Column="0">
+
+
+                <Grid VerticalOptions="FillAndExpand" BackgroundColor="#FE9930">
+
+                    <StackLayout Orientation="Horizontal"  HeightRequest="75" Margin="0,0,0,0" HorizontalOptions="FillAndExpand"  >
+
+                        <ImageButton Source="leftarrow.png" x:Name="BtnAtras" Clicked="BtnAtras_Clicked" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" HeightRequest="25" Margin="20,0,0,0" ></ImageButton>
+
+                        <Label TextColor="WhiteSmoke"
+                               Text="Centro de Innovación y Gestión Pedagógica" 
+                               FontSize="15"
+                               VerticalOptions="CenterAndExpand"
+                               FontAttributes="Bold"
+                               Margin="0,0,0,0"
+                               />
+
+                    </StackLayout>
+                </Grid>
+
+
+                <ScrollView>
+
+                    <StackLayout>
+
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="La misión del CINGEP se centra en asegurar la calidad de los procesos de enseñanza y de aprendizaje a través del diseño, desarrollo y organización de cursos que potencien en los participantes el aprendizaje autónomo y participativo, además de las competencias profesionales." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="Este Centro se ha convertido en referente de buenas prácticas docentes desarrollando cursos innovadores y de alta calidad pedagógica." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="En síntesis, este Centro sistematiza, planifica, coordina y supervisa las acciones que conducen al desarrollo de cursos con altos estándares de calidad." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="El CINGEP es el responsable de:" HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0"  TextColor="#333" Text="1. La elaboración de los contenidos educativos de las asignaturas que se ofrecen en la Universidad o, en su defecto, refrendar contenidos que se ofrecen en libros que se encuentran en el mercado y en la Web." HorizontalOptions="StartAndExpand"></Label>
+                        <Label  Padding="10,10,10,0"  TextColor="#333" Text="2. La calidad del diseño instruccional, así como su adecuación al MECCA y a la modalidad de educación a distancia." HorizontalOptions="StartAndExpand"></Label>
+                        <Label  Padding="10,10,10,0"  TextColor="#333" Text="3. La Planificación y gestión de los cursos que se ofrecen a los participantes a través de la plataforma virtual." HorizontalOptions="StartAndExpand"></Label>
+                        <Label  Padding="10,10,10,0"  TextColor="#333" Text="4. Aseguramiento de las actualizaciones e innovaciones que requieran las asignaturas." HorizontalOptions="StartAndExpand"></Label>
+                        <Label  Padding="10,10,10,0"  TextColor="#333" Text="5. Monitoreo y control de la calidad de los cursos diseñados." HorizontalOptions="StartAndExpand"></Label>
+                        <Label  Padding="10,10,10,10"  TextColor="#333" Text="6. Apoyo y asistencia permanente a los participantes en los procesos docentes, administrativos y tecnológicos que realizan en la Universidad." HorizontalOptions="StartAndExpand"></Label>
+                      
+                    </StackLayout>
+                </ScrollView>
+
+
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
