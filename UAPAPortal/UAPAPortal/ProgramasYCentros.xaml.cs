@@ -52,5 +52,10 @@ namespace UAPAPortal
             await Navigation.PushModalAsync(new PyCCuice());
 
         }
+
+        private async void BtnCude_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new PyCCuce());
+        }
     }
 }

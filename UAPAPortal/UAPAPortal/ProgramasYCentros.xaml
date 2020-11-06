@@ -140,7 +140,7 @@
                                             Text="CUDE"
                                             TextColor="White"
                                             FontSize="10"
-                                         
+                                            Clicked="BtnCude_Clicked"
                                             x:Name="BtnCude"
                                             ImageSource="ofertaacademica"
                                             HeightRequest="80"
