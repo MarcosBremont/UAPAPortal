@@ -107,6 +107,7 @@
                                     Grid.Row="2"
                                     Grid.Column="0"
                                     x:Name="BtnNosotros"
+                    Clicked="BtnNosotros_Clicked"
                                     Text="Nosotros"
                                     ImageSource="Nosotros"
                                     HeightRequest="80"
@@ -116,12 +117,13 @@
                 </Button>
 
                 <Button 
-                    Margin="5,5,5,5"
+                                    Margin="5,5,5,5"
                  
                                     Grid.Row="2"
                                     Grid.Column="1"
-                                    x:Name="BtnAjustes"
-                                    Text="Ajustes"
+                                    x:Name="BtnMiPerfil"
+                                    Text="Mi Perfil"
+                                    Clicked="BtnMiPerfil_Clicked"
                                     ImageSource="ajustes"
                                     HeightRequest="80"
                                     BackgroundColor="#FE9930"

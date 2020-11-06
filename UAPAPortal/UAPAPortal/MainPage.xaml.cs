@@ -34,5 +34,15 @@ namespace UAPAPortal
         {
             await Navigation.PushModalAsync(new Departamentos());
         }
+
+        private async void BtnNosotros_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new Nosotros());
+        }
+
+        private async void BtnMiPerfil_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new MiPerfil());
+        }
     }
 }

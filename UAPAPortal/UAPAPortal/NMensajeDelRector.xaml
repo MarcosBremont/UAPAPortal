@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UAPAPortal.NMensajeDelRector">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White">
+            <StackLayout Grid.Row="0" Grid.Column="0">
+
+
+                <Grid VerticalOptions="FillAndExpand" BackgroundColor="#FE9930">
+
+                    <StackLayout Orientation="Horizontal"  HeightRequest="85" Margin="0,0,0,0" HorizontalOptions="FillAndExpand"  >
+
+                        <ImageButton Source="leftarrow.png" x:Name="BtnAtras" Clicked="BtnAtras_Clicked" HorizontalOptions="Start" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent" HeightRequest="25" Margin="20,0,0,0" ></ImageButton>
+
+                        <Label TextColor="WhiteSmoke"
+                               Text="Sistema de Alerta e Intervención Temprana" 
+                               FontSize="15"
+                               VerticalOptions="CenterAndExpand"
+                               FontAttributes="Bold"
+                               Margin="0,0,0,0"
+                               />
+
+                    </StackLayout>
+                </Grid>
+
+
+                <ScrollView>
+
+                    <StackLayout>
+
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="Mensaje del Rector" HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="La UAPA es el resultado de una visión sobre el futuro de la educación superior dominicana cuya concreción ha requerido el trabajo y la colaboración de muchas personas e instituciones. Su actividad académica inició el 14 de enero de 1995 con grandes precariedades materiales, pero con la claridad de ser una institución con vocación hacia la calidad de sus servicios y con una esmerada dedicación a la comunidad académica que la integra." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="Hoy, 25 años después, la UAPA es una institución de gran reconocimiento en el país y en el extranjero, disfruta de una aceptación plena en la comunidad académica nacional e internacional por la seriedad de su trabajo y los frutos logrados. Sus egresados están distribuidos por todo el país contribuyendo con su talento y liderazgo al desarrollo nacional, lo cual nos enorgullece y nos compromete a seguir colaborando para que nuestra sociedad sea cada día mejor" HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="En este proceso la UAPA ha creado sólidas alianzas con pares nacionales e internacionales, cuenta con acuerdos interinstitucionales con universidades de Europa, Estados Unidos,África, América Latina y El Caribe. Forma parte de las principales asociaciones de universidades del mundo dedicadas a la educación a distancia y contribuye al desarrollo de las mismas con sus ideas y proyectos." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="La Universidad ha sido evaluada en dos oportunidades por el MESCYT obteniendo los mejores resultados, destacándose la importancia que la institución le otorga a los procesos de planificación y evaluación de sus resultados. Gran parte del éxito se debe, precisamente, al rol de estos procesos en la vida académica a todos los niveles." HorizontalOptions="StartAndExpand"  ></Label>
+                        <Label  Padding="10,10,10,10" TextColor="#333" Text="La UAPA es hoy una universidad con presencia en casi todo el país. Sus participantes se encuentran dispersos en la geografía nacional. Ellos pueden estudiar sus respectivas carreras desde cualquier lugar. La distancia, o cualquier otra variable discriminatoria, no tienen importancia en esta universidad. Aquí puede estudiar un joven proveniente de un hogar privilegiado como uno de origen humilde, un religioso como un no creyente. Todos tienen las mismas oportunidades de lograr el éxito dado los mecanismos de apoyo puestos a la disposición de los que menos tienen. Nacimos con el lema educación superior para todos y seguimos apegados a él ya que la educación es el medio más eficiente para superar la pobreza y todos tienen igual derecho a una educación de calidad." HorizontalOptions="StartAndExpand"  ></Label>
+
+                    </StackLayout>
+                </ScrollView>
+
+
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
