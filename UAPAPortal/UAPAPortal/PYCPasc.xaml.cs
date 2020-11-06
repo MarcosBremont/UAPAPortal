@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace UAPAPortal
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ProgramasYCentros : ContentPage
+    public partial class PYCPasc : ContentPage
     {
-        public ProgramasYCentros()
+        public PYCPasc()
         {
             InitializeComponent();
         }
@@ -20,16 +20,6 @@ namespace UAPAPortal
         private async void BtnAtras_Clicked(object sender, EventArgs e)
         {
             await Navigation.PopModalAsync();
-        }
-
-        private async void BtnConvivencia_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new PYCcatedraconvivencia());
-        }
-
-        private async void BtnPasc_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new PYCPasc());
         }
     }
 }

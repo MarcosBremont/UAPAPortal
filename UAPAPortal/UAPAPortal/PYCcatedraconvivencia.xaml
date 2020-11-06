@@ -23,13 +23,7 @@
 
                     </StackLayout>
                 </Grid>
-                <ScrollView Orientation="Horizontal">
-                    <StackLayout>
-                    <Image Source="1"></Image>
-                    <Image Source="2"></Image>
-                    <Image Source="3"></Image>
-                    </StackLayout>
-                </ScrollView>
+               
 
                 <ScrollView>
 

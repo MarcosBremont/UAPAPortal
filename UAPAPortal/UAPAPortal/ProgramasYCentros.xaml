@@ -65,7 +65,7 @@
                                             Grid.Column="1"
                                             Text="PASC"
                                             FontSize="12"
-                                        
+                                            Clicked="BtnPasc_Clicked"
                                             x:Name="BtnPasc"
                                             TextColor="White"
                                             ImageSource="study"
