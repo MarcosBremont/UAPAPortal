@@ -31,5 +31,10 @@ namespace UAPAPortal
         {
             await Navigation.PushModalAsync(new PYCPasc());
         }
+
+        private async void BtnProfundo_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new PYCProfundo());
+        }
     }
 }

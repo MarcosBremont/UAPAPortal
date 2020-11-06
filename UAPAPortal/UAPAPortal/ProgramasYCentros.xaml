@@ -81,7 +81,7 @@
                                             Grid.Column="0"
                                             Text="PROFUNDO"
                                             TextColor="White"
-                                          
+                                          Clicked="BtnProfundo_Clicked"
                                             x:Name="BtnProfundo"
                                             ImageSource="ofertaacademica"
                                             HeightRequest="80"
