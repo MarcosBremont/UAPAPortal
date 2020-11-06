@@ -41,5 +41,16 @@ namespace UAPAPortal
         {
             await Navigation.PushModalAsync(new PyCPUSE());
         }
+
+        private async void BtnSait_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new PyCSait());
+        }
+
+        private async void BtnCuice_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new PyCCuice());
+
+        }
     }
 }

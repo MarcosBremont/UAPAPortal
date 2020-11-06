@@ -111,7 +111,7 @@
                                             Text="SAIT"
                                             TextColor="White"
                                             FontSize="10"
-                                            
+                                            Clicked="BtnSait_Clicked"
                                             x:Name="BtnSait"
                                             ImageSource="ofertaacademica"
                                             HeightRequest="80"
@@ -124,7 +124,7 @@
                                             Grid.Column="1"
                                             Text="CUICE"
                                             TextColor="White"
-                                        
+                                            Clicked="BtnCuice_Clicked"
                                             FontSize="10"
                                             x:Name="BtnCuice"
                                             ImageSource="ofertaacademica"
