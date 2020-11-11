@@ -20,6 +20,8 @@
                                FontAttributes="Bold"
                                Margin="0,0,0,0"
                                />
+                        
+                        
 
                     </StackLayout>
                 </Grid>
@@ -29,54 +31,30 @@
 
                     <StackLayout>
 
-                        <Label  Padding="10,10,10,0" TextColor="#333" Text="Seleccione su carrera" HorizontalOptions="StartAndExpand"  ></Label>
-                        <Picker >
-                            <Picker.Items>
-                                <x:String >Agrimensura (AGR)</x:String>
-                                <x:String>Administración de Empresas</x:String>
-                                <x:String>Administración de Empresas Turísticas</x:String>
-                                <x:String>Ciencias de la Educación, Mención Ciencias Sociales</x:String>
-                                <x:String>Ciencias de la Educación, Mención Lengua Española</x:String>
-                                <x:String>Ciencias de la Educación, Mención Matemática-Física</x:String>
-                                <x:String>Ciencias de la Educación, Mención Primer Ciclo de la Educación Básica</x:String>
-                                <x:String>Contabilidad Empresarial</x:String>
-                                <x:String>Derecho</x:String>
-                                <x:String>Informática Gerencial</x:String>
-                                <x:String>Lenguas Modernas Mención Turismo</x:String>
-                                <x:String>Mercadeo</x:String>
-                                <x:String>Psicología</x:String>
-                                <x:String>Psicología Clínica</x:String>
-                                <x:String>Psicología Educativa</x:String>
-                                <x:String>Psicología Industrial</x:String>
-                                <x:String>Licenciatura en Periodismo Digital</x:String>
-                                <x:String>Ingeniería en Software</x:String>
-                                <x:String>Educación, Mención Gestión de Centros Educativos</x:String>
-                                <x:String>Educación Inicial</x:String>
-                                <x:String>Mercadeo, Mención Gerencia de Mercadeo</x:String>
-                                <x:String>Historia, con orientación a la enseñanza</x:String>
-                                <x:String>Derecho Civil y Procesal Civil Contemporáneos</x:String>
-                                <x:String>Gerencia de Recursos Humanos</x:String>
-                                <x:String>Dirección Financiera</x:String>
-                                <x:String>Gestión de la Tecnología Educativa.</x:String>
-                                <x:String>Derecho Constitucional.</x:String>
-                                <x:String>Maestría en Terapia Familiar.</x:String>
-                                <x:String>Maestría En Gestión De Instituciones Educativas Virtuales.</x:String>
-                                <x:String>Gestión de Centros Educativos.</x:String>
-                                <x:String>Mercadeo.</x:String>
-                                <x:String>Educación, Mención Lengua Española, 2do. Ciclo.</x:String>
-                                <x:String>Lengua Española y Literatura, con orientación a la enseñanza.</x:String>
-                                <x:String>Educación, Mención Matemática y Física, 2do. Ciclo.</x:String>
-                                <x:String>Matemática, con orientación a la enseñanza.</x:String>
-                                <x:String>Educación, Mención Historia y Geografía.</x:String>
-                                <x:String>Historia, con orientación a la enseñanza.</x:String>
-                                <x:String>Biología, con orientación a la enseñanza.</x:String>
-                                <x:String>Informática, con orientación a la enseñanza.</x:String>
-                            </Picker.Items>
-                        </Picker>
-
-                        <DatePicker x:Name="DpFecha">
+                        <Label  Padding="10,10,10,0" TextColor="#333" Text="Introduzca las materias que le faltan de dar" HorizontalOptions="StartAndExpand"  ></Label>
+                        <Entry></Entry>
+                        
+                        <ListView  Margin="5" ItemsSource="{Binding materias}" HasUnevenRows="True" ItemSelected="ListView_ItemSelected" ItemTapped="ListView_ItemTapped" >
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid Padding="10">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="*"/>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Label Text="{Binding NombreM} "></Label>
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
                             
-                        </DatePicker>
+                        </ListView>
+                       
                     </StackLayout>
                 </ScrollView>
 

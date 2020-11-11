@@ -59,7 +59,25 @@
                                             Visual="Material"
                                             CornerRadius="8">
                 </Button>
-               
+
+                <Button 
+                                          
+                                            Grid.Row="0"
+                                            Grid.Column="1"
+                                            x:Name="BtnRecordatorio"
+                                         
+                                            Text="Recordatorio"
+                                            ImageSource="university"
+                                            TextColor="White"
+                                            HeightRequest="80"
+                                            FontSize="11"
+                    Clicked="BtnRecordatorio_Clicked"
+                                            BackgroundColor="#09183A"
+                                            Margin="5,20,5,5"
+                                            Visual="Material"
+                                            CornerRadius="8">
+                </Button>
+
 
 
 

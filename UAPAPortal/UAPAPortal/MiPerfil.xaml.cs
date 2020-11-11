@@ -26,5 +26,10 @@ namespace UAPAPortal
         {
             await Navigation.PushModalAsync(new Materias());
         }
+
+        private async void BtnRecordatorio_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new MRecordatorio());
+        }
     }
 }
