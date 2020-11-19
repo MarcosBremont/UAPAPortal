@@ -32,10 +32,9 @@
                     <StackLayout>
 
                         <Label  Padding="10,10,10,0" TextColor="#333" Text="Introduzca las materias que le faltan de dar" HorizontalOptions="StartAndExpand"  ></Label>
-                        <Picker x:Name="PickerCarreras" SelectedIndexChanged="PickerCarreras_SelectedIndexChanged"></Picker>
+                        <Entry x:Name="MateriasEntry"></Entry>
                         
-                        
-                        <ListView x:Name="ListViewMaterias" IsVisible="false" Margin="5" ItemsSource="{Binding materias}" HasUnevenRows="True" ItemSelected="ListView_ItemSelected" ItemTapped="ListView_ItemTapped" >
+                        <ListView  Margin="5" ItemsSource="{Binding materias}" HasUnevenRows="True" ItemSelected="ListView_ItemSelected" ItemTapped="ListView_ItemTapped" >
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <ViewCell>
